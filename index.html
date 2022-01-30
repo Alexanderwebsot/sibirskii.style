@@ -11,12 +11,485 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- main css -->
+	<link rel="stylesheet" href="libs/selectize.js-master/dist/css/selectize.css">
 	<link rel="stylesheet" href="css/main.css">
-	
 </head>
 <body>
+<div class="dark-window"></div>
+<div class="modal-menu mob-true">
+	<div class="modal-menu__inner">
+		<h2 class="modal-menu__title">
+			<span>МЕНЮ</span>
+			<img class="menu-close" src="img/close-menu.png" alt="">
+		</h2>
+		<ul class="nav-list">
+			<li class="nav-list__item active">
+				<a href="">ГЛАВНАЯ</a>
+			</li>
+			<li class="nav-list__item has-child">
+				<a href="">УСЛУГИ</a>
+				<ul class="has-child__list">
+					<li class="has-child__list__item has-child__list__item_active">
+						<a href="">
+							Ремонт и отделка <br>
+							помещений
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Фасадные и  <br>
+							кровельные работы
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Генеральный подряд
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Дизайн-проект <br>
+							помещений
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Подготовка домов  <br>
+							к сдаче
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Реконструкция зданий
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Малоэтажное <br>
+							строительство
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-list__item">
+				<a href="">ПОРТФОЛИО</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="">СКАЧАТЬ ПРАЙС</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="">ВАКАНСИИ</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="">КОНТАКТЫ</a>
+			</li>
+		</ul>
+		<div class="modal-menu-text">
+			<span class="modal-menu-text__time">
+				Звоните, мы сейчас работаем
+			</span>
+			<a href="tel:" class="modal-menu-text__phone">
+				8 (383) 291-52-53
+			</a>
+			<span class="modal-menu-text__subtext">
+				Задайте вопрос напрямую
+			</span>
+			<div class="header-messenger__list">
+				<a href="" class="header-messenger__item">
+					<div class="header-messenger-wrapper">
+						<img class="hover-no" src="img/whatc.png" alt="">
+						<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+					</div>
+					<span>WhatsApp</span>
+				</a>
+				<a href="" class="header-messenger__item header-messenger__item_tg">
+					<img src="img/icon_telegram.png" alt="">
+					<span>Telegram</span>
+				</a>
+			</div>
+			<span class="modal-menu-text__time">
+				Напишите нам
+			</span>
+			<a href="mail-to:sibstyle@ya.ru" class="header-phone__email email-anime2">
+				sibstyle@yandex.ru
+			</a>
+			<div class="footer-soc">
+				<span class="footer-soc__title">
+					Мы в социальных 
+					сетях
+				</span>
+				<div class="footer-soc__row">
+					<a href="" class="footer-soc__item footer-soc_f">
+						<img src="img/iconinsta_f.png" alt="">
+					</a>
+					<a href="" class="footer-soc__item">
+						<img src="img/iconwk_f.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-window modal-window-3 modal-window-estimate">
+	<div class="modal-window__inner" id="modal-window-1">
+		<div class="modal-window-block">
+			<img src="img/min_smeta.png" alt="" class="modal-window__img">
+			<h2 class="modal-window-block__title">
+				Предварительный <br>
+				расчет сметы
+			</h2>
+			<p class="modal-window-block__subtitle">
+				Заполните данные формы  за 1 мин. <br> 
+				и получите предварительный  <br>
+				расчет стоимости работ для  <br>
+				вашего объекта
+			</p>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Тип вашего объекта
+				</span>
+				<select name="" id="" class="calculation-block__select">
+					<option value="Магазин или бутик">
+						Коммерческий (офис, кафе, магазин, 
+						салон красоты и т.д.)
+					</option>
+					<option value="Фитнес студий">
+						Фитнес студий
+					</option>
+					<option value="Ресторан или кафе">
+						Ресторан или кафе
+					</option>
+				</select>
+			</div>
+			<div class="calculation-block-label calculation-block-label_rev">
+				<span class="calculation-block__name">
+					Введите общий размер <br class="mob-true">помещений в м2
+				</span>
+				<span class="calculation-block__subname">
+					Если еще не делали замер - пишите “не знаю”
+				</span>
+				<input type="text" placeholder="Например, 120м2 или не знаю" class="calculation-block__input">
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Есть ли проект или техническое <br>
+					задание в наличии
+				</span>
+				<select name="" id="" class="calculation-block__select">
+					<option value="Нет">
+						Нет
+					</option>
+					<option value="Да">
+						Да
+					</option>
+				</select>
+			</div>
+			<div class="calculation-block-label calculation-block-label-oplt">
+				<span class="calculation-block__name">
+					Какой вид оплаты вам подходит?
+				</span>
+				<div class="estimate-block__wrapper">
+					<div class="estimate-block__block">
+						<input checked type="checkbox" name="nal-1" id="label-1" class="modal-window-estimate__check">
+						<label for="label-1" class="modal-window-estimate__label">
+							Безналичный <br> <br class="mob-true">
+							расчет
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-2" class="modal-window-estimate__check">
+						<label for="label-2" class="modal-window-estimate__label">
+							Наличный <br><br class="mob-true">
+							расчет
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Какие требуются работы?
+				</span>
+				<div class="estimate-block__block__wrapper">
+					<div class="estimate-block__block estimate-block__block_ab">
+						<input checked type="checkbox" name="nal-2" id="label-3" class="modal-window-estimate__check">
+						<label for="label-3" class="modal-window-estimate__label">
+							Косметический ремонт (поклейка обоев, <br>
+							обновление полов и пр)
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_ab">
+						<input type="checkbox" name="nal-2" id="label-4" class="modal-window-estimate__check">
+						<label for="label-4" class="modal-window-estimate__label">
+							Капитальный ремонт (перепланировка, <br>
+							замена коммуникаций и пр)
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-2" id="label-5" class="modal-window-estimate__check">
+						<label for="label-5" class="modal-window-estimate__label">
+							Реконструкция
+						</label>
+					</div>
+				</div>
+				
+				<div class="estimate-block__wrapper">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-6" class="modal-window-estimate__check">
+						<label for="label-6" class="modal-window-estimate__label">
+							Нужна консультация
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_x2">
+						<input type="checkbox" name="nal-1" id="label-7" class="modal-window-estimate__check">
+						<label for="label-7" class="modal-window-estimate__label">
+							Другое
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Трeбуются ли дополнительные <br class="mob-true"> услуги?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="dop-1" id="dop-1" class="modal-window-estimate__check">
+						<label for="dop-1" class="modal-window-estimate__label">
+							Электрика
+						</label>
+					</div>
+					<div class="estimate-block__block block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-210" class="modal-window-estimate__check">
+						<label for="label-210" class="modal-window-estimate__label">
+							Сантехника
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-220" class="modal-window-estimate__check">
+						<label for="label-220" class="modal-window-estimate__label">
+							Вентиляция/ <br> <br class="mob-true">
+							кондиционирование
+						</label>
+					</div>
+					<div class="estimate-block__block block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-230" class="modal-window-estimate__check">
+						<label for="label-230" class="modal-window-estimate__label">
+							Отопление
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input  type="checkbox" name="nal-1" id="label-240" class="modal-window-estimate__check">
+						<label for="label-240" class="modal-window-estimate__label">
+							Водоснабжение
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_end">
+						<input type="checkbox" name="nal-1" id="label-250" class="modal-window-estimate__check">
+						<label for="label-250" class="modal-window-estimate__label">
+							Противопожарная <br> <br class="mob-true">
+							система
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_end2">
+						<input type="checkbox" name="nal-1" id="label-260" class="modal-window-estimate__check">
+						<label for="label-260" class="modal-window-estimate__label">
+							Видеонаблюдение
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_end3 block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-270" class="modal-window-estimate__check">
+						<label for="label-270" class="modal-window-estimate__label">
+							Другое
+						</label>
+					</div>
+					<div class="estimate-block__block block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-280" class="modal-window-estimate__check">
+						<label for="label-280" class="modal-window-estimate__label">
+							Не требуется
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label calculation-block-label-radio">
+				<span class="calculation-block__name">
+					Когда планируете <br class="mob-true">начать работы?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x4" class="modal-window-estimate__check">
+						<label for="x4" class="modal-window-estimate__label">
+							В течение 24 часов
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x41" class="modal-window-estimate__check">
+						<label for="x41" class="modal-window-estimate__label">
+							В течение 1-2 недель
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x3" class="modal-window-estimate__check">
+						<label for="x3" class="modal-window-estimate__label">
+							В течение месяца
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x2" class="modal-window-estimate__check">
+						<label for="x2" class="modal-window-estimate__label">
+							В ближайшие <br>
+							3 месяца
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x14" class="modal-window-estimate__check">
+						<label for="x14" class="modal-window-estimate__label">
+							Более, чем через <br>
+							3 месяца
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Какой вариант расчета <br class="mob-true">нужно сделать?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="dop-1" id="dop-19" class="modal-window-estimate__check">
+						<label for="dop-19" class="modal-window-estimate__label">
+							“Под кюч” <br>
+							с материалами
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-2109" class="modal-window-estimate__check">
+						<label for="label-2109" class="modal-window-estimate__label">
+							Только работы. <br>
+							Материалы ваши
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Куда вам отправить <br class="mob-true">расчет стоимости?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="dop-1" id="dop-19x" class="modal-window-estimate__check">
+						<label for="dop-19x" class="modal-window-estimate__label">
+							WhatsApp
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="dop-20x" class="modal-window-estimate__check">
+						<label for="dop-20x" class="modal-window-estimate__label">
+							Telegram
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="dop-21x" class="modal-window-estimate__check">
+						<label for="dop-21x" class="modal-window-estimate__label">
+							Бесплатая консультация по телефону. <br class="mob-true"></br> Хочу <br>
+							получить более подробную<br class="mob-true"> информацию.
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label calculation-block-label_mb">
+				<span class="calculation-block__name">
+					Введите ваш телефон
+				</span>
+				<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+			</div>
+
+			<a href="#" class="header-right__btn">
+				<span>РАССЧИТАТЬ СМЕТУ<img src="img/arrow-r.png" alt=""></span>
+			</a>
+			<p class="modal-window-block__text">
+				Нажимая на кнопку, вы даете согласие на обработку <br>
+				персональных данных и соглашаетесь с <a href="">политикой <br>
+				конфиденциальности.</a> Ваши данные не будут <br>
+				переданы третим лицам.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="modal-window modal-window-1">
+	<div class="modal-window__inner" id="modal-window-1">
+		<div class="modal-window-block">
+			<img src="img/modal-window-img.png" alt="" class="modal-window__img">
+			<h2 class="modal-window-block__title">
+				Получите <br>
+				бесплатную консультвацию <br>
+				от инженера-эксперта
+			</h2>
+			<p class="modal-window-block__subtitle">
+				Заполните форму обратной <br>
+				связи. С вами свяжется в <br class="pc-true">
+				течение часа наш ведущий <br class="pc-true">
+				специалист и проконсультирует <br class="pc-true">
+				по всем вопросам
+			</p>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Введите ваш телефон
+				</span>
+				<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+			</div>
+			<a href="#" class="header-right__btn">
+				<span>ЗАКАЗАТЬ ЗВОНОК<img src="img/arrow-r.png" alt=""></span>
+			</a>
+			<p class="modal-window-block__text">
+				Нажимая на кнопку, вы даете согласие на обработку <br>
+				персональных данных и соглашаетесь с <a href="">политикой <br>
+				конфиденциальности.</a> Ваши данные не будут <br>
+				переданы третим лицам.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="modal-navigation">
+	<div class="modal-navigation__block modal-navigation__block_1">
+		<div class="modal-navigation__block_left">
+			Рассчитать <br>
+			стоимость
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/raschet.png" alt="">
+		</div>
+	</div>
+	<div class="modal-navigation__block modal-navigation__block_2">
+		<div class="modal-navigation__block_left">
+			Перезвоните <br>
+			мне
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/trubka.png" alt="">
+		</div>
+	</div>
+	<div class="modal-navigation__block modal-navigation__block_3">
+		<div class="modal-navigation__block_left">
+			Скачать <br>
+			прайс-лист
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/price.png" alt="">
+		</div>
+	</div>
+	<div class="modal-navigation__block modal-navigation__block_4">
+		<div class="modal-navigation__block_left">
+			Вызвать  <br>
+			инженера
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/spets.png" alt="">
+		</div>
+	</div>
+</div>
 <header class="header">
-	<img src="img/header-bg.png" alt="" class="header-bg">
+	<img src="img/header-bg.png" alt="" class="header-bg pc-true">
+	<img src="img/header-mobile-bg.png" class="header-bg mob-true" alt="">
 	<nav class="header-nav">
 		<div class="container">
 			<div class="nav-top">
@@ -32,6 +505,12 @@
 							области с 2000 года
 						</p>
 					</div>
+					<a href="" class="header-button mob-true">
+						<span class="header-button__title">
+							МЕНЮ
+						</span>
+						<img src="img/menu-mb.png" alt="">
+					</a>
 				</div>
 				<div class="header-2gis">
 					<img src="img/2gis.png" alt="">
@@ -44,7 +523,10 @@
 					</p>
 					<div class="header-messenger__list">
 						<a href="" class="header-messenger__item">
-							<img src="img/whatc.png" alt="">
+							<div class="header-messenger-wrapper">
+								<img class="hover-no" src="img/whatc.png" alt="">
+								<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+							</div>
 							<span>WhatsApp</span>
 						</a>
 						<a href="" class="header-messenger__item header-messenger__item_tg">
@@ -54,13 +536,13 @@
 					</div>
 				</div>
 				<div class="header-phone">
-					<a href="tel:" class="header-phone__number">
+					<a href="tel:" class="header-phone__number phone-anime-gold">
 						8 (383) 291-52-53
 					</a>
-					<a href="mail-to:sibstyle@ya.ru" class="header-phone__email">
+					<a href="mail-to:sibstyle@ya.ru" class="header-phone__email email-anime2">
 						sibstyle@ya.ru
 					</a>
-					<a href="#" class="header-phone__calback">
+					<a href="#" class="header-phone__calback phone-anime-gold">
 						ПЕРЕЗВОНИТЬ ВАМ
 					</a>
 				</div>
@@ -71,6 +553,48 @@
 				</li>
 				<li class="nav-list__item has-child">
 					<a href="">УСЛУГИ</a>
+					<ul class="has-child__list">
+						<li class="has-child__list__item has-child__list__item_active">
+							<a href="">
+								Ремонт и отделка <br>
+								помещений
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Фасадные и  <br>
+								кровельные работы
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Генеральный подряд
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Дизайн-проект <br>
+								помещений
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Подготовка домов  <br>
+								к сдаче
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Реконструкция зданий
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Малоэтажное <br>
+								строительство
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li class="nav-list__item">
 					<a href="">ПОРТФОЛИО</a>
@@ -100,7 +624,7 @@
 					за каждый день просрочки
 				</h2>
 				<div class="header-content-block" data-aos="fade-right" data-aos-duration="1000">
-					<div class="header-block">
+					<div class="header-block header-block-1">
 						<p class="header-block__text">
 							Бесплатный детальный  <br>
 							<strong>расчет и выход</strong> на объект <br>
@@ -108,7 +632,7 @@
 						</p>
 						<img src="img/icon_1.png" alt="" class="header-block__img">
 					</div>
-					<div class="header-block">
+					<div class="header-block header-block-2">
 						<p class="header-block__text">
 							<strong>Поэтапная оплата</strong> <br>
 							с фиксированной сметой,  <br>
@@ -125,7 +649,7 @@
 						</p>
 						<img src="img/icon_3.png" alt="" class="header-block__img">
 					</div>
-					<div class="header-block header-block-bottom">
+					<div class="header-block header-block-4 header-block-bottom">
 						<p class="header-block__text">
 							<strong>Берем на себя согласования </strong> <br>
 							с УК, <strong>беготню</strong> с бумажками  <br>
@@ -138,6 +662,9 @@
 			</div>
 			<div class="header-content-right" data-aos="fade-left" data-aos-duration="1000">
 				<div class="header-right__block">
+					<a href="#" class="header-right__block__2gis mob-true">
+						<img src="img/2gis_mobile.png" alt="">
+					</a>
 					<h3 class="header-right__title">
 						Бесплатный расчет сметы
 					</h3>
@@ -157,8 +684,9 @@
 						</div>
 					</div>
 					<img src="img/header-book.png" alt="" class="header-right__img">
-					<a href="#" class="header-right__btn">
+					<a href="#" class="header-right__btn btn-anime modal-open-3">
 						<span>ПОЛУЧИТЬ СМЕТУ <img src="img/arrow-r.png" alt=""></span>
+						<span class="button__blik"></span>
 					</a>
 				</div>
 			</div>
@@ -298,7 +826,8 @@
 							</h4>
 							<div class="project-form__cont">
 								<input type="text" class="project-form__input phone" placeholder="Введите ваш телефон">
-								<a href="#" class="project-form__btn">
+								<a href="#" class="project-form__btn btn-anime-bottom">
+									<span class="button__blik"></span>
 									<span>
 										<strong>Получить оценку </strong> <br>
 										стоимости и сроков
@@ -319,7 +848,7 @@
 								<span class="form-bottom__subtitle">
 									Звоните по телефону
 								</span>
-								<a href="tel:" class="form-bottom__phone">
+								<a href="tel:" class="form-bottom__phone phone-anime-gold">
 									8 (383) 291-52-53
 								</a>
 							</div>
@@ -533,7 +1062,8 @@
 						</div>
 					</div>
 					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
 							<span>
 								<strong>Получить оценку </strong> <br>
 								стоимости и сроков
@@ -546,8 +1076,11 @@
 								напрямую
 							</span>
 							<a href="" class="header-messenger__item">
-								<img src="img/whatc.png" alt="">
-								<span>WhatsApp</span>
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
 							</a>
 						</div>
 					</div>
@@ -627,7 +1160,8 @@
 						</a>
 					</div>
 					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
 							<span>
 								<strong>Получить оценку </strong> <br>
 								стоимости и сроков
@@ -640,8 +1174,11 @@
 								напрямую
 							</span>
 							<a href="" class="header-messenger__item">
-								<img src="img/whatc.png" alt="">
-								<span>WhatsApp</span>
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
 							</a>
 						</div>
 					</div>
@@ -715,7 +1252,8 @@
 						</div>
 					</div>
 					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
 							<span>
 								<strong>Получить оценку </strong> <br>
 								стоимости и сроков
@@ -728,8 +1266,11 @@
 								напрямую
 							</span>
 							<a href="" class="header-messenger__item">
-								<img src="img/whatc.png" alt="">
-								<span>WhatsApp</span>
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
 							</a>
 						</div>
 					</div>
@@ -803,7 +1344,8 @@
 						</div>
 					</div>
 					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
 							<span>
 								<strong>Получить оценку </strong> <br>
 								стоимости и сроков
@@ -816,8 +1358,11 @@
 								напрямую
 							</span>
 							<a href="" class="header-messenger__item">
-								<img src="img/whatc.png" alt="">
-								<span>WhatsApp</span>
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
 							</a>
 						</div>
 					</div>
@@ -891,7 +1436,8 @@
 						</div>
 					</div>
 					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
 							<span>
 								<strong>Получить оценку </strong> <br>
 								стоимости и сроков
@@ -904,8 +1450,11 @@
 								напрямую
 							</span>
 							<a href="" class="header-messenger__item">
-								<img src="img/whatc.png" alt="">
-								<span>WhatsApp</span>
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
 							</a>
 						</div>
 					</div>
@@ -979,7 +1528,8 @@
 						</div>
 					</div>
 					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
 							<span>
 								<strong>Получить оценку </strong> <br>
 								стоимости и сроков
@@ -992,22 +1542,28 @@
 								напрямую
 							</span>
 							<a href="" class="header-messenger__item">
-								<img src="img/whatc.png" alt="">
-								<span>WhatsApp</span>
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a href="#" class="portfolio-more" data-aos="fade-up" data-aos-duration="1000">
-				ПОСМОТРЕТЬ ЕЩЕ 117 РАБОТ
+			<a href="#" class="portfolio-more btn-anime" data-aos="fade-up" data-aos-duration="1000">
+				
+				<span style="display: flex;align-items: center;">ПОСМОТРЕТЬ ЕЩЕ 117 РАБОТ
 				<img src="img/arrow-r.png" alt="">
+				</span>
 			</a>
 		</div>
 	</section>
 </div>
 <section class="reviews">
-	<img src="img/reviews.png" alt="" class="header-bg">
+	<img src="img/reviews.png" alt="" class="header-bg pc-true">
+	<img src="img/bg-rev-mobile.png" alt="" class="header-bg mob-true">
 	<img src="img/zasvet.png" alt="" class="reviews-blick">
 	<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
 		Работаем с <span>организациями <br>
@@ -1015,7 +1571,7 @@
 	</h2>
 	<div class="container">
 		<div class="reviews-row">
-			<div class="reviews-licens" data-aos="fade-right" data-aos-duration="1000">
+			<div class="reviews-licens reviews-licens-first" data-aos="fade-right" data-aos-duration="1000">
 				<div class="reviews-licens-wrapper">
 					<img src="img/ramka.png" alt="" class="reviews-licens__ramka">
 					<div class="reviews-licens-slider">
@@ -1026,10 +1582,12 @@
 					</div>
 					<div class="portfolio-block-arrows">
 						<a href="" class="portfolio-block__arrow licens-block_l">
-							<img src="img/left1_b.png" alt="">
+							<img class="a-hover-no" src="img/left1_b.png" alt="">
+							<img class="a-hover-true" src="img/hvr-l.png" alt="">
 						</a>
 						<a href="" class="portfolio-block__arrow licens-block_r">
-							<img src="img/rite1_b.png" alt="">
+							<img class="a-hover-no" src="img/rite1_b.png" alt="">
+							<img class="a-hover-true" src="img/hvr-r.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1057,10 +1615,12 @@
 					</div>
 					<div class="portfolio-block-arrows">
 						<a href="" class="portfolio-block__arrow phone-block_l">
-							<img src="img/left1_b.png" alt="">
+							<img class="a-hover-no" src="img/left1_b.png" alt="">
+							<img class="a-hover-true" src="img/hvr-l.png" alt="">
 						</a>
 						<a href="" class="portfolio-block__arrow phone-block_r">
-							<img src="img/rite1_b.png" alt="">
+							<img class="a-hover-no" src="img/rite1_b.png" alt="">
+							<img class="a-hover-true" src="img/hvr-r.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1069,9 +1629,1224 @@
 		
 	</div>
 </section>
+<section class="calculation">
+	<img src="img/calculation-bg.png" alt="" class="header-bg pc-true">
+	<img src="img/bg_left_cal.png" alt="" class="calculation-bg-mobile mob-true">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			<span>Рассчитаем стоимость работ</span> по вашему объекту
+		</h2>
+		<h3 class="section-subtitle" data-aos="fade-up" data-aos-duration="1000">
+			Получите детальный, расшифрованный <br class="mob-true">сметный расчет, где будут учтены <br>
+			все виды работ и материалы <br class="mob-true">по вашим требованиям
+		</h3>
+		<div class="calculation-row">
+			<img src="img/mocblraschet.png" alt="" class="calculation__mocap" data-aos="fade-right" data-aos-duration="1000">
+			<div class="calculation-block" data-aos="fade-left" data-aos-duration="1000">
+				<div class="calculation-block__abc">
+					<p>
+						<strong>Заполните</strong> форму и <strong>получите </strong> <br>
+						предварительную смету
+					</p>
+				</div>
+				<div class="calculation-block-label">
+					<span class="calculation-block__name">
+						Выберите объект
+					</span>
+					<select name="" id="" class="calculation-block__select">
+						<option value="Магазин или бутик">
+							Магазин или бутик
+						</option>
+						<option value="Фитнес студий">
+							Фитнес студий
+						</option>
+						<option value="Ресторан или кафе">
+							Ресторан или кафе
+						</option>
+					</select>
+				</div>
+				<div class="calculation-block-label">
+					<span class="calculation-block__name">
+						Укажите площадь помещений (в кв.м)
+					</span>
+					<select name="" id="" class="calculation-block__select">
+						<option value="30 м2">
+							30 м2
+						</option>
+						<option value="40 м2">
+							40 м2
+						</option>
+						<option value="50 m2">
+							50 m2
+						</option>
+					</select>
+				</div>
+				<div class="calculation-block-label">
+					<span class="calculation-block__name">
+						Куда прислать смету
+					</span>
+					<select name="" id="" class="calculation-block__select">
+						<option value="Магазин или бутик">
+							Whats App
+						</option>
+						<option value="Фитнес студий">
+							Telegram
+						</option>
+						<option value="Ресторан или кафе">
+							SMS
+						</option>
+					</select>
+				</div>
+				<div class="calculation-block-label">
+					<span class="calculation-block__name">
+						Введите ваш телефон
+					</span>
+					<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+				</div>
+				<a href="#" class="header-right__btn btn-anime">
+					<span class="button__blik"></span>
+					<span>ПОЛУЧИТЬ СМЕТУ <img src="img/arrow-r.png" alt=""></span>
+				</a>
+				<p class="calculation-politic">
+					Заполняя форму вы соглашаетесь <br>
+					с <a href="#">политикой конфиденциальности</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="guarantees">
+	<img src="img/bgblgaranti.png" alt="" class="header-bg">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Все <span>гарантии фиксируем</span> документально, <br>
+			а <span>недочеты исправляем</span> за свой счет
+		</h2>
+		<div class="guarantees-row">
+			<div class="guarantees-row-left">
+				<div class="guarantees-left__block guarantees-left-active tab_1" data-aos="fade-right" data-aos-duration="1000">
+					<p>
+						Полная <br>
+						материальная <br>
+						ответственность
+					</p>
+				</div>
+				<div class="guarantees-left__block tab_2" data-aos="fade-right" data-aos-duration="1500">
+					<p>
+						Работаем с вашим <br>
+						минимальным <br>
+						участием
+					</p>
+				</div>
+				<div class="guarantees-left__block tab_3" data-aos="fade-right" data-aos-duration="2000">
+					<p>
+						Поэтапная работа <br>
+						и подробная <br>
+						отчетность
+					</p>
+				</div>
+			</div>
+			<div class="guarantees-block tab_active_block_1" data-aos="fade-left" data-aos-duration="1000">
+				<div class="guarantees-block__tab tab_1 tab_active">
+					<h3 class="guarantees-block__title">
+						Берем на себя полную <strong>материальную <br>
+						ответственность</strong> и прописываем <strong>гарантии</strong>
+					</h3>
+					<div class="guarantees-row__row">
+						<div class="guarantees__block_1_mob guarantees__block">
+							<img src="img/icon_1_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Гарантия <br>
+								сроков
+							</span>
+							<p class="guarantees__block__text">
+								Несем ответственность за <br>
+								соблюдение сроков выполнения <br>
+								работ. В случае срыва -за свой <br>
+								счет копмпенсируем убытки 
+							</p>
+						</div>
+						<div class="guarantees__block_2_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_2_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Без скрытых <br>
+								платежей
+							</span>
+							<p class="guarantees__block__text">
+								Стоимость работ не изменяется <br>
+								в процессе работы. Цена <br>
+								рассчитывается в смете, которую <br>
+								подписываем с Вами в договоре
+							</p>
+						</div>
+						<div class="guarantees__block_3_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_3_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Исправления <br>
+								за свой счет
+							</span>
+							<p class="guarantees__block__text">
+								Утерю материалов, любой <br>
+								дефект или несоответствие <br>
+								характеристикам
+							</p>
+						</div>
+						<div class="guarantees__block_4_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_4_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Гарантия <br>
+								на работы
+							</span>
+							<p class="guarantees__block__text">
+								Гарантия на материалы <br>
+								и работы от 1 до 5 лет. <br>
+								Прописываем в договоре
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="guarantees-block__tab tab_2">
+					<h3 class="guarantees-block__title">
+						Работаем <br>
+						с вашим <strong>минимальным участием</strong>
+					</h3>
+					<div class="guarantees-row__row">
+						<div class="guarantees__block_5_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_5_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Работаем <br>
+								комлексно
+							</span>
+							<p class="guarantees__block__text">
+								Делаем все под ключ <br>
+								и берем на себя проблемы, <br>
+								возникающиепо ходу работ
+							</p>
+						</div>
+						<div class="guarantees__block_6_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_6_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Всегда на связи
+							</span>
+							<p class="guarantees__block__text">
+								Прораб  присутствует <br>
+								на объекте и контактирует <br>
+								с вами на всех этапах. Вы можете <br>
+								ему написать, позвонить или <br>
+								приехать на объект.
+							</p>
+						</div>
+						<div class="guarantees__block_7_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_7_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Онлайн <br>
+								отчётность
+							</span>
+							<p class="guarantees__block__text">
+								Отчётность каждую <br>
+								неделю о ходе работ присылаем <br>
+								по e-mail, whatsapp, telegram или <br>
+								через соц. сети
+							</p>
+						</div>
+						<div class="guarantees__block_8_mob guarantees__block guarantees__block_3 guarantees__block_8">
+							<img src="img/icon_8_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Работаем днем <br>
+								и ночью
+							</span>
+							<p class="guarantees__block__text">
+								При этом соблюдаем <br>
+								нормы шума в соответствии <br>
+								с законом.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="guarantees-block__tab tab_3">
+					<h3 class="guarantees-block__title">
+						Работаем поэтапно. Принимаем <strong>все виды оплаты. </strong> <br>
+						Делаем полную <strong>бухгалтерскую отчетность</strong>
+					</h3>
+					<div class="guarantees-row__row">
+						<div class="guarantees__block_9_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_9_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Смета  <br>
+								за 24 часа
+							</span>
+							<p class="guarantees__block__text">
+								Сделаем оперативный расчет. <br>
+								При вашем согласии приступим <br>
+								к работам в день обращения
+							</p>
+						</div>
+						<div class="guarantees__block_10_mob guarantees__block guarantees__block_3 guarantees__block_10">
+							<img src="img/icon_10_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Нал/ <br>
+								безнал
+							</span>
+							<p class="guarantees__block__text">
+								Принимаем оплату наличным  <br>
+								или безналичным расчетом
+							</p>
+						</div>
+						<div class="guarantees__block_11_mob guarantees__block guarantees__block_3">
+							<img src="img/icon_11_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Поэтапная  <br>
+								оплата
+							</span>
+							<p class="guarantees__block__text">
+								Составляем график работ <br>
+								и двигаемся по нему. Разбиваем  <br>
+								оплату на этапы
+							</p>
+						</div>
+						<div class="guarantees__block_12_mob guarantees__block guarantees__block_3 guarantees__block_12">
+							<img src="img/icon_12_i.png" alt="" class="guarantees__block__img">
+							<span class="guarantees__block__title">
+								Финансовая  <br>
+								отчетность
+							</span>
+							<p class="guarantees__block__text">
+								На все работы предоставляем  <br>
+								бухгалтерские документы
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="task">
+	<img src="img/task-bg.png" alt="" class="header-bg pc-true">
+	<img src="img/task-bg-mob.png" alt="" class="header-bg mob-true">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Готовы <span>выполнить задачу </span> <br>
+			с надежной компанией?
+		</h2>
+		<div class="task-row">
+			<div class="task-plashka-abc" data-aos="fade-right" data-aos-duration="2000">
+				<div class="task-plashka">
+					<img src="img/phone-plashka.png" alt="">
+					<div class="task-plashka__text">
+						<h4 class="task-plashka__title">
+							Звоните
+						</h4>
+						<div class="task-plashka__subtitle">
+							<img src="img/svet.png" alt="" class="task-plashka__cirlce num-anime">
+							<span>Сейчас работаем</span>
+						</div>
+						<br>
+						<a href="tel:8 (383) 291-52-53" class="task-plashka__phone phone-anime-gold">
+							8 (383) 291-52-53
+						</a>
+					</div>
+				</div>
+			</div>
+			<img src="img/task-img.png" alt="" class="task-img" data-aos="fade-right" data-aos-duration="1000">
+			<div class="task-block" data-aos="fade-left" data-aos-duration="1000">
+				<div class="task-block_text">
+					<h3 class="task-block__title">
+						или заполните форму <br>
+						для обратного звонка
+					</h3>
+					<h4 class="task-block__subtitle">
+						мы перезвоним <br>
+						и ответим на ваши вопросы
+					</h4>
+				</div>
+				<div class="calculation-block-label">
+					<span class="calculation-block__name">
+						Введите ваш телефон
+					</span>
+					<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+				</div>
+				<a href="#" class="header-right__btn btn-anime">
+					<span class="button__blik"></span>
+					<span>ПОЛУЧИТЬ СМЕТУ <img src="img/arrow-r.png" alt=""></span>
+				</a>
+				<p class="calculation-politic">
+					Заполняя форму вы соглашаетесь <br>
+					с <a href="#">политикой конфиденциальности</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="price-list">
+	<img src="img/price-list-bg.png" alt="" class="header-bg pc-true">
+	<img src="img/price-list-bg_mob.png" alt="" class="header-bg mob-true">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Скачайте <span>актуальный прайс-лист</span> на ремонт <br>
+			и отделку помещений <span>по ценам 2020 года</span>
+		</h2>
+		<div class="price-list__time" data-aos="fade-up" data-aos-duration="1000">
+			Держим прежние цены <br class="mob-true"> до
+			<img src="img/time.png" alt="">
+			23:59 30 сентября
+		</div>
+		<div class="price-content">
+			<h3 class="price__title" data-aos="fade-up" data-aos-duration="1000">
+				<strong>Заполните форму,</strong> чтобы получить <strong>доступ к прайсу </strong><br>
+				и забронировать за собой <strong>цены 2020 года</strong>
+			</h3>
+			<div class="price-list-form-wrapper" data-aos="fade-up" data-aos-duration="1000">
+				<div class="price-list-phone">
+					*За номером <br>
+					телефона закрепим <br>
+					выгодные цены
+				</div>
+				<div class="price-list-form">
+					<div class="price-list-form-top">
+						<div class="calculation-block-label calculation-block-label_phone">
+							<span class="calculation-block__name">
+								Введите ваш телефон
+							</span>
+							<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+						</div>
+						<div class="calculation-block-label">
+							<span class="calculation-block__name">
+								Вам нужна консультация <br>
+								по работам и материалам?
+							</span>
+							<select name="" id="" class="calculation-block__select">
+								<option value="Да">
+									Да
+								</option>
+								<option value="Нет">
+									Нет
+								</option>
+							</select>
+						</div>
+						<a href="#" class="header-right__btn btn-anime">
+							<span class="button__blik"></span>
+							<span>ПОЛУЧИТЬ ПРАЙС-ЛИСТ<img src="img/arrow-r.png" alt=""></span>
+						</a>
+						<img src="img/mocbl8.png" alt="" class="price-list__mokap mob-true" data-aos="fade-left" data-aos-duration="1000">
+					</div>
+					<div class="price-list-form-bottom">
+						<p class="calculation-politic">
+							Заполняя форму вы <br class="mob-true">соглашаетесь 
+							с <a href="#">политикой<br class="mob-true"> конфиденциальности</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<h5 class="project-compound_block__title" data-aos="fade-right" data-aos-duration="1000">
+				Консультация от специалиста <br>
+				с опытом более 20 лет
+			</h5>
+			<img src="img/price-mokap.png" alt="" class="price-list__mokap pc-true" data-aos="fade-left" data-aos-duration="1000">
+			<a href="#" class="price-list-pdf">
+				<img src="img/pdf_text.png" alt="">
+			</a>
+			<ul class="project-compound__list" data-aos="fade-right" data-aos-duration="1000">
+				<img src="img/price-arrow.png" alt="" class="price-content__arrow pc-true">
+				<img src="img/strelkabl9_mob.png" alt="" class="price-content__arrow mob-true">
+				<li class="project-compound__item">
+					Поможет уточнить цены на работы
+				</li>
+				<li class="project-compound__item">
+					Обозначит сроки выполнения вашей задачи
+				</li>
+				<li class="project-compound__item">
+					При желании проведет детальный осмотр 
+					и изучение особенностей объекта
+				</li>
+				<li class="project-compound__item">
+					Даст рекомендации, поможет сэкономить 
+					не в ущерб качеству
+				</li>
+			</ul>
+			</div>
+	</div>
+</section>
+<section class="premises">
+	<img src="img/premises-bg.png" alt="" class="header-bg">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Работаем <span>с помещениями разного типа </span> <br>
+			и создаем функциональное пространство  <br>
+			<span>под задачи клиента</span>
+		</h2>
+		<div class="premises-row-mobile">
+			<div class="premises-row">
+				<div class="premises-block" data-aos="fade-up" data-aos-duration="1000">
+					<img src="img/premises-1.png" alt="" class="premises-block__img">
+					<div class="premises-block__inner">
+						<h3 class="premises-block__title">
+							Разработка <br>
+							дизайн-проекта
+						</h3>
+						<ul class="premises-block__list">
+							<li class="premises-block__item">
+								Подготовка обмерочного <br>
+								плана помещения.
+							</li>
+							<li class="premises-block__item">
+								Создание дизайна <br>
+								помещения.
+							</li>
+							<li class="premises-block__item">
+								Эргономичная <br>
+								планировка пространства.
+							</li>
+							<li class="premises-block__item">
+								Подготовка инженерных <br>
+								проектов и рабочих <br>
+								чертежей.
+							</li>
+							<li class="premises-block__item">
+								План расстановки <br>
+								мебели и сантехники.
+							</li>
+						</ul>
+						<a href="#" class="header-right__btn modal-open-1 btn-anime-bottom">
+							<span class="button__blik"></span>
+							<span>КОНСУЛЬТАЦИЯ<img src="img/arrow-r.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+				<div class="premises-block" data-aos="fade-up" data-aos-duration="1500">
+					<img src="img/premises-2.png" alt="" class="premises-block__img">
+					<div class="premises-block__inner">
+						<h3 class="premises-block__title">
+							Косметический <br>
+							ремонт
+						</h3>
+						<ul class="premises-block__list">
+							<li class="premises-block__item">
+								Обновление интерьера <br>
+								без капитального <br>
+								изменения планировки <br>
+								помещения.
+							</li>
+							<li class="premises-block__item">
+								Покраска стен, <br>
+								поклейка обоев.
+							</li>
+							<li class="premises-block__item">
+								Выравнивание потолков.
+							</li>
+							<li class="premises-block__item">
+								Замена напольного <br>
+								покрытия.
+							</li>
+							<li class="premises-block__item">
+								Установка дверей, окон <br>
+								и кондиционеров.
+							</li>
+						</ul>
+						<a href="#" class="header-right__btn modal-open-1 btn-anime-bottom">
+							<span class="button__blik"></span>
+							<span>КОНСУЛЬТАЦИЯ<img src="img/arrow-r.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+				<div class="premises-block" data-aos="fade-up" data-aos-duration="2000">
+					<img src="img/premises-3.png" alt="" class="premises-block__img">
+					<div class="premises-block__inner">
+						<h3 class="premises-block__title">
+							Капитальный <br>
+							ремонт
+						</h3>
+						<ul class="premises-block__list">
+							<li class="premises-block__item">
+								Комплекс работ, <br>
+								связанных <br>
+								с перепланировкой <br>
+								помещения, а также <br>
+								с заменой (прокладкой) <br>
+								инженерных систем.
+							</li>
+							<li class="premises-block__item">
+								Замена внутренних <br>
+								конструкций.
+							</li>
+							<li class="premises-block__item">
+								Демонтаж ограждающих <br>
+								элементов строительных <br>
+								конструкций.
+							</li>
+						</ul>
+						<a href="#" class="header-right__btn modal-open-1 btn-anime-bottom">
+							<span class="button__blik"></span>
+							<span>КОНСУЛЬТАЦИЯ<img src="img/arrow-r.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+				<div class="premises-block" data-aos="fade-up" data-aos-duration="2500">
+					<img src="img/premises-4.png" alt="" class="premises-block__img">
+					<div class="premises-block__inner">
+						<h3 class="premises-block__title">
+							Эксклюзивный <br>
+							ремонт
+						</h3>
+						<ul class="premises-block__list">
+							<li class="premises-block__item">
+								Расширенный комплекс <br>
+								работ по сложным <br>
+								дизайн-проектам.
+							</li>
+							<li class="premises-block__item">
+								Полностью индивидуальный <br>
+								уникальный интерьер.
+							</li>
+							<li class="premises-block__item">
+								Нестандартная <br>
+								планировка помещения.
+							</li>
+							<li class="premises-block__item">
+								Эксклюзивные <br>	
+								дизайнерские решения.
+							</li>
+							<li class="premises-block__item">
+								Изготовление материалов <br>
+								под заказ.
+							</li>
+						</ul>
+						<a href="#" class="header-right__btn modal-open-1 btn-anime-bottom">
+							<span class="button__blik"></span>
+							<span>КОНСУЛЬТАЦИЯ<img src="img/arrow-r.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-block-arrows">
+				<a href="" class="portfolio-block__arrow premises-block_l">
+					<img src="img/left1.png" alt="">
+				</a>
+				<a href="" class="portfolio-block__arrow premises-block_r">
+					<img src="img/rite1.png" alt="">
+				</a>
+			</div>
+		</div>
+		
+	</div>
+</section>
+<section class="fight">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Беремся за самые <span>сложные <br>
+			и эксклюзивные задачи</span>
+		</h2>
+		<div class="fight-row">
+			<div class="fight-left" data-aos="fade-right" data-aos-duration="1000">
+				<div class="fight-block fight-block__left">
+					<img src="img/fight-1.png" alt="" class="fight-block__img">
+					<p class="fight-block__text">
+						Проектные  <br>
+						работы
+					</p>
+				</div>
+				<div class="fight-block ">
+					<img src="img/fight-2.png" alt="" class="fight-block__img">
+					<p class="fight-block__text">
+						Возведение общественных  <br>
+						и промышленных зданий <br>
+						и сооружений
+					</p>
+				</div>
+				<div class="fight-block fight-block__left">
+					<img src="img/fight-3.png" alt="" class="fight-block__img">
+					<p class="fight-block__text">
+						Жилищное  <br>
+						строительство  <br>
+						под ключ
+					</p>
+				</div>
+				<div class="fight-block">
+					<img src="img/fight-4.png" alt="" class="fight-block__img">
+					<p class="fight-block__text">
+						Монтаж внутренних  <br>
+						инженерных систем
+					</p>
+				</div>
+				<div class="fight-block fight-block__left">
+					<img src="img/fight-5.png" alt="" class="fight-block__img">
+					<p class="fight-block__text">
+						Проведение полного <br>
+						комплекса отделочных работ,  <br>
+						внутренних и наружных
+					</p>
+				</div>
+				<div class="fight-block">
+					<img src="img/fight-6.png" alt="" class="fight-block__img">
+					<p class="fight-block__text">
+						Фасадные  <br>
+						и кровельные работы
+					</p>
+				</div>
+			</div>
+			<div class="fight-right" data-aos="fade-left" data-aos-duration="1000">
+				<div class="fight-right__block fight-right__block_1">
+					<img src="img/dopusk.png" alt="" class="fight-right__img">
+					<p class="fight-right__text">
+						Имеем  <br>
+						допуски для  <br>
+						проведения <br>
+						любых работ
+					</p>
+					<a href="#" class="fight-right__btn btn-anime">
+						<span class="button__blik"></span>
+						<span>Посмотреть допуски</span>
+					</a>
+				</div>
+				<div class="fight-right__block fight-right__block_2">
+					<img src="img/telbl10.png" alt="" class="fight-right__img">
+					<p class="fight-right__text">
+						Перезвоним  <br>
+						по телефону <br>
+						и сориентируем  <br>
+						по стоимости  <br>
+						через 30 минут
+					</p>
+					<a href="#" class="fight-right__btn btn-anime">
+
+						<span>перезвоните мне</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="materials">
+	<img src="img/bg_house.png" alt="" class="materials-bg pc-true">
+	<img src="img/bg_house_mobile.png" alt="" class="materials-bg mob-true">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Подберем для вас <span>оптимальные по цене <br>
+			и качеству</span> материалы и доставим на объект
+		</h2>
+		<img src="img/materials-macap.png" alt="" class="materials-mocap" data-aos="fade-right" data-aos-duration="1000">
+		<div class="materials-row">
+			<div class="materials-block materials-block_1" data-aos="fade-up" data-aos-duration="1000">
+				<img src="img/materials-1.png" alt="" class="materials-block__img">
+				<h3 class="materials-block__title">
+					Берем суету по закупке <br>
+					материалов на себя
+				</h3>
+				<p class="materials-block__text">
+					При необходимости, <br>
+					подбор, закупку и поставку <br>
+					материалов на объект <br>
+					берем на себя. Предоставим <br>
+					все чеки
+				</p>
+			</div>
+			<div class="materials-block materials-block_2" data-aos="fade-up" data-aos-duration="1500">
+				<img src="img/materials-2.png" alt="" class="materials-block__img">
+				<h3 class="materials-block__title">
+					Выбираем золотую середину, <br>
+					а не дешевый вариант
+				</h3>
+				<p class="materials-block__text">
+					На рынке у 1 материала 10 <br>
+					аналогов и столько же <br>
+					ценовых категорий. Мы <br>
+					подбираем недорогой вариант,<br>
+					 который прослужит дольше
+				</p>
+			</div>
+			<div class="materials-block materials-block_3" data-aos="fade-up" data-aos-duration="2000">
+				<img src="img/materials-3.png" alt="" class="materials-block__img">
+				<h3 class="materials-block__title">
+					Поэтапная закупка
+				</h3>
+				<p class="materials-block__text">
+					Не покупаем сразу весь <br>
+					материалв целях вашей <br>
+					экономии. К концу каждого <br>
+					процесса подсчитываем и <br>
+					докупаем по мелочи то, чего <br>
+					не хватает.
+				</p>
+			</div>
+			<div class="materials-block materials-block_4" data-aos="fade-up" data-aos-duration="2500">
+				<img src="img/materials-4.png" alt="" class="materials-block__img">
+				<h3 class="materials-block__title">
+					Убираем мусор <br>
+					после работ
+				</h3>
+				<p class="materials-block__text">
+					Проведём уборку и <br>
+					вывезем мусор после <br>
+					окончания работ
+				</p>
+			</div>
+		</div>
+		<div class="materials-bottom" data-aos="fade-up" data-aos-duration="1000">
+			<h3 class="materials-bottom__title">
+				Сотрудничаем с более 20 поставщиками <br>
+				материалов и оборудования
+			</h3>
+			<div class="materials-bottom-row">
+				<div class="materials-bottom-left">
+					За счет скидок на оптовые закупки <br>
+					и длительного сотрудничества <br>
+					с партнерами <span>обеспечим</span> ваш объект <br>
+					<span>материалами со скидкой до 30%</span>
+				</div>
+				<div class="materials-bottom-right">
+					<div class="materials-bottom-slider">
+						<div class="materials-bottom-slide">
+							<img src="img/company-1.png" alt="" class="">
+						</div>
+						<div class="materials-bottom-slide">
+							<img src="img/company-2.png" alt="" class="">
+						</div>
+						<div class="materials-bottom-slide">
+							<img src="img/company-3.png" alt="" class="">
+						</div>
+						<div class="materials-bottom-slide">
+							<img src="img/company-4.png" alt="" class="">
+						</div>
+						<div class="materials-bottom-slide materials-bottom-slide_5">
+							<img src="img/company-5.png" alt="" class="">
+						</div>
+						<div class="materials-bottom-slide">
+							<img src="img/company-1.png" alt="" class="">
+						</div>
+						<div class="materials-bottom-slide">
+							<img src="img/company-2.png" alt="" class="">
+						</div>
+					</div>
+					<div class="portfolio-block-arrows">
+						<a href="" class="portfolio-block__arrow materials-block_l">
+							<img class="a-hover-no" src="img/left1.png" alt="">
+							<img class="a-hover-true" src="img/hvr-l.png" alt="">
+						</a>
+						<a href="" class="portfolio-block__arrow materials-block_r">
+							<img class="a-hover-no" src="img/rite1.png" alt="">
+							<img class="a-hover-true" src="img/hvr-r.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="specialist">
+	<img src="img/specialist-bg.png" alt="" class="header-bg">
+	<div class="container">
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Вызовите на объект нашего ведущего специалиста <br>
+			<span>для составления подробного<br class="mob-true"> ТЗ и сметы</span>
+		</h2>
+		<div class="specialist-row">
+			<img src="img/min_free.png" alt="" class="specialist-row__free">
+			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1000">
+				<img src="img/specialist-1.png" alt="" class="specialist-block__img">
+				<span class="specialist-block__num mob-true">
+					01
+				</span>
+				<p class="specialist-block__text">
+					Проведет детальный осмотр и <br>
+					изучение особенностей объекта
+				</p>
+			</div>
+			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1400">
+				<img src="img/specialist-2.png" alt="" class="specialist-block__img">
+				<span class="specialist-block__num mob-true">
+					02
+				</span>
+				<p class="specialist-block__text">
+					Выслушает ваши <br>
+					требования
+				</p>
+			</div>
+			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1800">
+				<img src="img/specialist-3.png" alt="" class="specialist-block__img">
+				<span class="specialist-block__num mob-true">
+					03
+				</span>
+				<p class="specialist-block__text">
+					Выполнит замеры <br>
+					помещения
+				</p>
+			</div>
+			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1000">
+				<img src="img/specialist-4.png" alt="" class="specialist-block__img">
+				<span class="specialist-block__num mob-true">
+					04
+				</span>
+				<p class="specialist-block__text">
+					Составит детальное <br>
+					техническое задание
+				</p>
+			</div>
+			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1400">
+				<img src="img/specialist-5.png" alt="" class="specialist-block__img">
+				<span class="specialist-block__num mob-true">
+					05
+				</span>
+				<p class="specialist-block__text">
+					Обозначит сроки <br>
+					выполнения вашей задачи
+				</p>
+			</div>
+			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1800">
+				<img src="img/specialist-6.png" alt="" class="specialist-block__img">
+				<span class="specialist-block__num mob-true">
+					06
+				</span>
+				<p class="specialist-block__text">
+					Даст рекомендации, поможет <br> 
+					сэкономить не в ущерб качеству
+				</p>
+			</div>
+		</div>
+		<div class="specialist-bottom">
+			<h2 class="specialist-bottom__title" data-aos="fade-up" data-aos-duration="1000">
+				<strong>По результату проведенных <br class="mob-true">замеров</strong> и ваших  <br>
+				требований<br class="mob-true"> будет составлена <strong class="mob-sp">подробная смета </strong> <br>
+				<strong class="mob-sp">расходов</strong> с указанием стоимости работ и материалов
+			</h2>
+			<div class="specialist-bottom-wrapper">
+				<div class="specialist-bottom__left" data-aos="fade-right" data-aos-duration="1000">
+					<div class="task-plashka__text">
+						<h4 class="task-plashka__title">
+							Звоните
+						</h4>
+						<div class="task-plashka__subtitle">
+							<img src="img/svet.png" alt="" class="task-plashka__cirlce num-anime">
+							<span>Мы сейчас работаем</span>
+						</div>
+						<br>
+						<a href="tel:8 (383) 291-52-53" class="task-plashka__phone phone-anime-gold">
+							8 (383) 291-52-53
+						</a>
+					</div>
+				</div>
+				<div class="specialist-bottom__right" data-aos="fade-left" data-aos-duration="1000">
+					<div class="specialist-bottom__info">
+						<p>
+							Техническое задание <br>
+							включает все требования <br>
+							заказчика <strong>и влияет <br>
+							на 80% будущих расходов</strong>
+						</p>
+					</div>
+					<img src="img/specialist-right.png" alt="" class="specialist__right_img">
+				</div>
+			</div>
+		</div>
+		<div class="specialist-form">
+			<h3 class="specialist-form__title" data-aos="fade-up" data-aos-duration="1000">
+				Или <span>заполните форму</span> для <br class="mob-true">обратного звонка <br>
+				- мы <span>перезвоним <br class="mob-true">вам и согласуем</span> время приезда
+			</h3>
+			<div class="price-list-form" data-aos="fade-up" data-aos-duration="1000">
+				<div class="price-list-form-top">
+					<div class="calculation-block-label calculation-block__data_lab">
+						<img src="img/data.png" alt="" class="calculation-block__data">
+						<span class="calculation-block__name">
+							Укажите удобную дату
+						</span>
+						<input class="calculation-block__input date-input">
+					</div>
+					<div class="calculation-block-label calculation-block-label_phone">
+						<span class="calculation-block__name">
+							Введите ваш телефон
+						</span>
+						<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+					</div>
+					
+					<a href="#" class="header-right__btn btn-anime-bottom">
+						<span class="button__blik"></span>
+						<span>ПЕРЕЗВОНИТЕ МНЕ<img src="img/arrow-r.png" alt=""></span>
+					</a>
+				</div>
+				<div class="price-list-form-bottom">
+					<p class="calculation-politic">
+						Заполняя форму вы соглашаетесь 
+						с <a href="#">политикой конфиденциальности</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="leave">
+	<img src="img/leave-bg.png" alt="" class="header-bg">
+	<div class="container">
+		<h3 class="leave-title" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/smiley.png" alt="" class="leave__img">
+			<span>Не спешите уходить!</span>
+		</h3>
+		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+			Обратившись к нам,<br class="mob-true"> Вы получите <span>решение задачи <br>
+			с гарантиями</span> прописанными в договоре
+		</h2>
+		<h4 class="leave-subtitle" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/heart.png" alt="">
+			<p>Чтобы не потерять наш сайт, <span>добавьте его в избранное</span> (закладки) <span>или сохраните</span></p>
+		</h4>
+		<div class="leave-bottom">
+			<div class="leave-bottom__block leave-bottom__block_left" data-aos="fade-up" data-aos-duration="1000">
+				<p class="leave-bottom__text">
+					Нажмите сочетание <br>
+					клавиш в браузере
+				</p>
+				<div class="leave-bottom__inner">
+					Сtrl+D
+				</div>
+			</div>
+			<div class="leave-bottom__block leave-bottom__block_right" data-aos="fade-up" data-aos-duration="2000">
+				<p class="leave-bottom__text">
+					Нажмите на<br class="mob-true"> кнопку <br>
+					в телефоне
+				</p>
+				<img src="img/scrin_.png" alt="" class="leave-bottom__inner__img">
+			</div>
+		</div>
+		<div class="leave-row">
+			<div class="leave-block" data-aos="fade-up" data-aos-duration="1000">
+				<img src="img/leavie-1_mob.png" alt="" class="leave-block__img mob-true">
+				<img src="img/leave-1.png" alt="" class="leave-block__img">
+				<p class="leave-block__text">
+					Бесплатно приедем,  <br>
+					полностью осмотрим  <br>
+					объект и сделаем  <br>
+					точный <span>расчет сметы  <br>
+					в течение 1 дня</span>
+				</p>
+			</div>
+			<div class="leave-block" data-aos="fade-up" data-aos-duration="1500">
+				<img src="img/leavie-2_mob.png" alt="" class="leave-block__img mob-true">
+				<img src="img/leave-2.png" alt="" class="leave-block__img">
+				<p class="leave-block__text">
+					Все работы <br class="mob-true"><br>
+					в одном месте <br class="mob-true"> <br>
+					<span>«под ключ»</span>
+				</p>
+			</div>
+			<div class="leave-block" data-aos="fade-up" data-aos-duration="2000">
+				<img src="img/leavie-3_mob.png" alt="" class="leave-block__img mob-true">
+				<img src="img/leave-3.png" alt="" class="leave-block__img">
+				<p class="leave-block__text">
+					Гарантия <br>
+					по <br class="mob-true">договору  <br>
+					на все<br class="mob-true"> работы  <br>
+					<span>от 1 до 5 лет</span>
+				</p>
+			</div>
+			<div class="leave-block" data-aos="fade-up" data-aos-duration="2500">
+				<img src="img/leavie-4_mob.png" alt="" class="leave-block__img mob-true">
+				<img src="img/leave-4.png" alt="" class="leave-block__img">
+				<p class="leave-block__text">
+					Компания  <br>
+					<span>с 20 летним  <br>
+					опытом</span> с СРО <br>
+					 и специалистами  <br>
+					<span>со всеми допусками</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contacts">
+	<div class="container">
+		<div class="contacts-inner">
+			<div class="contacts-map pc-true">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34eea78c9c0a4aec29a79f1bd973b97c1fb1a8501e86e6c83dd2b1e56e6a4c5e&amp;width=1170&amp;height=536&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="contacts-map__mobile mob-true">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c0d2328a44b5d5d8538e3861488cb20916bdb57f1e4c7dcd797f2432a3f7fa3&amp;width=750&amp;height=245&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="contacts-block" data-aos="fade-right" data-aos-duration="1000">
+				<div class="contacts-block__inner">
+					<h2 class="contacts__title">
+						Наши контакты
+					</h2>
+					<a href="tel:8 (383) 291-52-53" class="contacts__phone phone-anime">
+						<img src="img/contact__phone.png" alt="">
+						8 (383) 291-52-53
+					</a>
+					<a href="mail-to:sibstyle@yandex.ru" class="email-anime contacts__email">
+						<img src="img/contact__email.png" alt="">
+						<span>sibstyle@yandex.ru</span>
+					</a>
+					<div class="contacts-mobile-wrapper">
+						<div class="contacts__adress">
+							<img src="img/contact__geo.png" alt="">
+							<span>г. Новосибирск, Горский мкр-н, <br>
+							64, 3 этаж, офис 27</span>
+						</div>
+						<div class="contacts__time">
+							<img src="img/contact__time.png" alt="">
+							<div class="contacts__time_text">
+								<span class="contacts__time__title">
+									Время работы: 
+								</span> 
+								<br>
+								<span class="contacts__time__date">
+									Пн-Пт 9:00-18:00
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#" class="contacts-block__link phone-anime">
+						ПЕРЕЗВОНИТЕ МНЕ
+					</a>
+					<div class="contacts-block__mobile-wrapper">
+						<div class="contacts-block__mobile-wrapper_l">
+							<p class="contacts-block__text">
+								Или задайте <br>
+								вопрос напрямую
+							</p>
+							<div class="task-plashka__subtitle">
+								<img src="img/svet.png" alt="" class="num-anime task-plashka__cirlce">
+								<span>Среднее время ответа 1 минута</span>
+							</div>
+						</div>
+						<div class="header-messenger__list">
+							<a href="" class="header-messenger__item">
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
+							</a>
+							<a href="" class="header-messenger__item header-messenger__item_tg">
+								<img src="img/icon_telegram.png" alt="">
+								<span>Telegram</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-top" data-aos="fade-up" data-aos-duration="1000">
+			<div class="footer-top-left">
+				<img src="img/logo_footer.png" alt="">
+				<div class="footer-top-left__logo_wrap">
+					<p class="footer-top__title">
+						Группа компаний <br>
+						<span>«Сибирский стиль»</span>
+					</p>
+					<p class="footer-top__subtitle">
+						Проектироание, строительство,  <br>
+						дизайн и отделка недвижимости  <br>
+						в Новосибирске и области <br>
+						с 2000 года
+					</p>
+				</div>
+				
+			</div>
+			<div class="footer-top-list">
+				<span class="footer-top-list__title">
+					Навигация по сайту
+				</span>
+				<ul class="footer-top-lists">
+					<li class="footer-top-list__item">
+						<a href="#">Ремонт и отделка</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Фасадные и кровельные работы</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Генеральный подряд</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Дизайн-проект помещений</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Подготовка домов к сдаче</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Реконструкция зданий</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Малоэтажное строительство</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-top-center">
+				<a href="#" class="footer-2gis">
+					<img src="img/2gis_footer.png" alt="" class="pc-true">
+					<img src="img/2gis_mobile_footer.png" alt="" class="mob-true">
+					<p class="footer-2gis__subtitle">
+						Рейтинг 4.8. <br>
+						(На основе 25 отзывов)
+					</p>
+				</a>
+				<div class="footer-soc">
+					<span class="footer-soc__title">
+						Мы в соцсетях
+					</span>
+					<div class="footer-soc__row">
+						<a href="" class="footer-soc__item footer-soc_f">
+							<img src="img/iconinsta_f.png" alt="">
+						</a>
+						<a href="" class="footer-soc__item">
+							<img src="img/iconwk_f.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-right">
+				<h2 class="footer-right__title footer-top-list__title">
+					Клиентам
+				</h2>
+				<ul class="footer-right__list">
+					<li class="footer-right__item">
+						<a href="#">
+							Реквизиты для юридических лиц
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#">
+							Посмотреть пример договора
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#">
+							Скачать прайс-лист
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#">
+							Получить смету
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom" data-aos="fade-up" data-aos-duration="1000">
+			<div class="footer-bottom-left">
+				<span>© 2000 - 2021.  Все права защищены</span>
+				<br>
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+			<div class="footer-bottom-center">
+				Любая информация, предоставленная на данном <br>
+				сайте носит исключительно информационный характер <br>
+				и ни при каких условиях не является публичной офертой
+			</div>
+			<div class="footer-bottom-right">
+				Сделано в <br>
+				<a href="">bugaev.studio</a>
+			</div>
+		</div>
+	</div>
+</footer>
 <!-- libs js -->
 <script src="js/libs.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://jquery-ui.googlecode.com/svn-history/r3982/trunk/ui/i18n/jquery.ui.datepicker-nl.js"></script>
+
 <script src="js/common.js"></script>
 </body>
 
