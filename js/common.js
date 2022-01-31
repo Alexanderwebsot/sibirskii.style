@@ -1,5 +1,15 @@
 $(document).ready(function () {
-  AOS.init();
+  if ($(window).width() < 720) {
+    $('.project-slider,.portfolio-block-slider,.reviews-phone-slider,.reviews-licens-slider,.materials-bottom-slider,.project-slider,.premises-row').on('init', function(event, slick){
+      AOS.init();
+    });
+  }
+  else{
+    $('.project-slider,.portfolio-block-slider,.reviews-phone-slider,.reviews-licens-slider,.materials-bottom-slider,.project-slider').on('init', function(event, slick){
+      AOS.init();
+    });
+  }
+  
 
   $(function() {
     $('select').selectize();
