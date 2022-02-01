@@ -71,6 +71,32 @@ $(document).ready(function () {
      });
   }
   
+  if ($(window).width() > 720 && $(window).width() < 1160) {
+     $('.footer-top__title').unwrap()
+     $('.footer-top-center, .footer-right').wrapAll('<div class="new-tablet">');
+  }
+  let date = new Date();
+
+  let day = date.getDate()
+  day = day + 1;
+  let month= date.getMonth();
+
+  let months=[
+     'Январь',
+     'Февраль',
+     'Март',
+     'Апрель',
+     'Май',
+     'Июнь',
+     'Июль',
+     'Август',
+     'Сентябрь',
+     'Ноябрь',
+     'Декабрь',
+  ];
+  $('.month').text(months[month]);
+  $('.day').text(day);
+
 
   const div = document.querySelector( '#modal-window-1');
    
@@ -82,6 +108,21 @@ $(document).ready(function () {
       $('.modal-window').removeClass('modal-window-active');
       $('html').removeClass('body-over');
     }
+  })
+
+
+  $('.modal-window__close').on('click', function() {
+    $('.dark-window').removeClass('dark-window-active');
+    $('.modal-window').removeClass('modal-window-active');
+    $('html').removeClass('body-over');
+  })
+
+  $('.portfolio-brief__more').on('click', function() {
+    let parent = $(this).parent('.portfolio-brief-wrap');
+    parent = $(parent).parent('.portfolio-brief');
+    child = $(parent).children('.portfolio-brief__text');
+    $(child).toggleClass('portfolio-brief__text__active');
+    return false;
   })
 
   $(".scrol-to").on("click", function (event) {

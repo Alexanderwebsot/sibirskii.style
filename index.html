@@ -132,6 +132,7 @@
 </div>
 <div class="modal-window modal-window-3 modal-window-estimate">
 	<div class="modal-window__inner" id="modal-window-1">
+		<img src="img/close-menu.png" alt="" class="modal-window__close">
 		<div class="modal-window-block">
 			<img src="img/min_smeta.png" alt="" class="modal-window__img">
 			<h2 class="modal-window-block__title">
@@ -148,16 +149,20 @@
 				<span class="calculation-block__name">
 					Тип вашего объекта
 				</span>
-				<select name="" id="" class="calculation-block__select">
-					<option value="Магазин или бутик">
+				<select name="Тип вашего объекта" id="" class="calculation-block__select">
+					<option value="Коммерческий (офис, кафе, магазин, 
+						салон красоты и т.д.)">
 						Коммерческий (офис, кафе, магазин, 
 						салон красоты и т.д.)
 					</option>
-					<option value="Фитнес студий">
-						Фитнес студий
+					<option value="Частный (дом, квартира, коттедж)">
+						Частный (дом, квартира, коттедж)
 					</option>
-					<option value="Ресторан или кафе">
-						Ресторан или кафе
+					<option value="Производственный (цех, производство)">
+						Производственный (цех, производство)
+					</option>
+					<option value="Другой">
+						Другой
 					</option>
 				</select>
 			</div>
@@ -175,12 +180,15 @@
 					Есть ли проект или техническое <br>
 					задание в наличии
 				</span>
-				<select name="" id="" class="calculation-block__select">
+				<select name="Есть ли проект или техническое задание в наличии" id="" class="calculation-block__select">
 					<option value="Нет">
 						Нет
 					</option>
 					<option value="Да">
 						Да
+					</option>
+					<option value="Не знаю">
+						Не знаю
 					</option>
 				</select>
 			</div>
@@ -417,6 +425,7 @@
 </div>
 <div class="modal-window modal-window-1">
 	<div class="modal-window__inner" id="modal-window-1">
+		<img src="img/close-menu.png" alt="" class="modal-window__close">
 		<div class="modal-window-block">
 			<img src="img/modal-window-img.png" alt="" class="modal-window__img">
 			<h2 class="modal-window-block__title">
@@ -998,10 +1007,11 @@
 				<div class="portfolio-block" data-aos="fade-up" data-aos-duration="800">
 					<div class="portfolio-block-wrapper">
 						<div class="portfolio-block-slider">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
 						</div>
 						<div class="portfolio-block-arrows">
 							<a href="" class="portfolio-block__arrow portfolio-block_l">
@@ -1054,6 +1064,8 @@
 						</span>
 						<p class="portfolio-brief__text">
 							Полный комплекс отделочных, электромонтажных 
+							и сантехнических работ.Полный комплекс отделочных, электромонтажных 
+							и сантехнических работ.Полный комплекс отделочных, электромонтажных 
 							и сантехнических работ.
 						</p>
 						<div class="portfolio-brief-wrap">
@@ -1185,105 +1197,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="portfolio-block" data-aos="fade-up" data-aos-duration="1200">
-					<div class="portfolio-block-wrapper">
-						<div class="portfolio-block-slider">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-						</div>
-						<div class="portfolio-block-arrows">
-							<a href="" class="portfolio-block__arrow portfolio-block_l">
-								<img src="img/left1.png" alt="">
-							</a>
-							<a href="" class="portfolio-block__arrow portfolio-block_r">
-								<img src="img/rite1.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="portfolio-info">
-						<div class="portfolio-info__block">
-							<img src="img/icon_hause.png" alt="">
-							<div class="portfolio-info__text_wrapper">
-								<span class="portfolio-info__title">
-									Тип объекта
-								</span>
-								<span class="portfolio-info__text">
-									Магазин
-								</span>
-							</div>
-						</div>
-						<div class="portfolio-info__block">
-							<img src="img/icon_m2.png" alt="">
-							<div class="portfolio-info__text_wrapper">
-								<span class="portfolio-info__title">
-									Площадь
-								</span>
-								<span class="portfolio-info__text">
-									150м2
-								</span>
-							</div>
-						</div>
-						<div class="portfolio-info__block">
-							<img src="img/icon_geo.png" alt="">
-							<div class="portfolio-info__text_wrapper">
-								<span class="portfolio-info__title">
-									Адрес
-								</span>
-								<span class="portfolio-info__text">
-									г. Новосибирск, <br>
-									ТЦ Аура
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio-brief">
-						<span class="portfolio-brief__title">
-							Коротко о проекте
-						</span>
-						<p class="portfolio-brief__text">
-							Полный комплекс отделочных, электромонтажных 
-							и сантехнических работ.
-						</p>
-						<div class="portfolio-brief-wrap">
-							<a href="#" class="portfolio-brief__more">
-								<span>Узнать подробнее</span>
-								<img src="img/strelka_vniz.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="portfolio-bottom">
-						<a href="#" class="project-form__btn btn-anime-bottom">
-							<span class="button__blik"></span>
-							<span>
-								<strong>Получить оценку </strong> <br>
-								стоимости и сроков
-							</span>
-							<img src="img/arrow-r.png" alt="">
-						</a>
-						<div class="portfolio-whatc">
-							<span class="portfolio-whatc__text">
-								Или пишите <br>
-								напрямую
-							</span>
-							<a href="" class="header-messenger__item">
-								<div class="header-messenger-wrapper">
-										<img class="hover-no" src="img/whatc.png" alt="">
-										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
-									</div>
-									<span>WhatsApp</span>
-							</a>
-						</div>
-					</div>
-				</div>
 				<div class="portfolio-block" data-aos="fade-up" data-aos-duration="800">
 					<div class="portfolio-block-wrapper">
 						<div class="portfolio-block-slider">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
 						</div>
 						<div class="portfolio-block-arrows">
 							<a href="" class="portfolio-block__arrow portfolio-block_l">
@@ -1336,6 +1257,8 @@
 						</span>
 						<p class="portfolio-brief__text">
 							Полный комплекс отделочных, электромонтажных 
+							и сантехнических работ.Полный комплекс отделочных, электромонтажных 
+							и сантехнических работ.Полный комплекс отделочных, электромонтажных 
 							и сантехнических работ.
 						</p>
 						<div class="portfolio-brief-wrap">
@@ -1422,20 +1345,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="portfolio-brief">
-						<span class="portfolio-brief__title">
-							Коротко о проекте
-						</span>
-						<p class="portfolio-brief__text">
-							Полный комплекс отделочных, электромонтажных 
-							и сантехнических работ.
-						</p>
-						<div class="portfolio-brief-wrap">
-							<a href="#" class="portfolio-brief__more">
-								<span>Узнать подробнее</span>
-								<img src="img/strelka_vniz.png" alt="">
-							</a>
+					<div class="brief-video">
+						<div class="portfolio-brief">
+							<span class="portfolio-brief__title">
+								Коротко о проекте
+							</span>
+							<p class="portfolio-brief__text">
+								Полный комплекс отделочных, 
+								электромонтажных и сантехнических
+								работ. 3 этажа
+							</p>
+							<div class="portfolio-brief-wrap">
+								<a href="#" class="portfolio-brief__more">
+									<span>Узнать подробнее</span>
+									<img src="img/strelka_vniz.png" alt="">
+								</a>
+							</div>
 						</div>
+						<a href="" class="portfolio-block-play">
+							<img src="img/play-portfolio.png" alt="">
+						</a>
 					</div>
 					<div class="portfolio-bottom">
 						<a href="#" class="project-form__btn btn-anime-bottom">
@@ -1461,13 +1390,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="portfolio-block" data-aos="fade-up" data-aos-duration="1200">
+				<div class="portfolio-block" data-aos="fade-up" data-aos-duration="800">
 					<div class="portfolio-block-wrapper">
 						<div class="portfolio-block-slider">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
-							<img src="img/slmool1.png" alt="">
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
+							<div class="portfolio-block-slide" style="background-image: url(img/slmool1.png);"></div>
 						</div>
 						<div class="portfolio-block-arrows">
 							<a href="" class="portfolio-block__arrow portfolio-block_l">
@@ -1520,6 +1450,8 @@
 						</span>
 						<p class="portfolio-brief__text">
 							Полный комплекс отделочных, электромонтажных 
+							и сантехнических работ.Полный комплекс отделочных, электромонтажных 
+							и сантехнических работ.Полный комплекс отделочных, электромонтажных 
 							и сантехнических работ.
 						</p>
 						<div class="portfolio-brief-wrap">
@@ -1528,6 +1460,104 @@
 								<img src="img/strelka_vniz.png" alt="">
 							</a>
 						</div>
+					</div>
+					<div class="portfolio-bottom">
+						<a href="#" class="project-form__btn btn-anime-bottom">
+							<span class="button__blik"></span>
+							<span>
+								<strong>Получить оценку </strong> <br>
+								стоимости и сроков
+							</span>
+							<img src="img/arrow-r.png" alt="">
+						</a>
+						<div class="portfolio-whatc">
+							<span class="portfolio-whatc__text">
+								Или пишите <br>
+								напрямую
+							</span>
+							<a href="" class="header-messenger__item">
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-block" data-aos="fade-up" data-aos-duration="1000">
+					<div class="portfolio-block-wrapper">
+						<div class="portfolio-block-slider">
+							<img src="img/slmool1.png" alt="">
+							<img src="img/slmool1.png" alt="">
+							<img src="img/slmool1.png" alt="">
+							<img src="img/slmool1.png" alt="">
+						</div>
+						<div class="portfolio-block-arrows">
+							<a href="" class="portfolio-block__arrow portfolio-block_l">
+								<img src="img/left1.png" alt="">
+							</a>
+							<a href="" class="portfolio-block__arrow portfolio-block_r">
+								<img src="img/rite1.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-info">
+						<div class="portfolio-info__block">
+							<img src="img/icon_hause.png" alt="">
+							<div class="portfolio-info__text_wrapper">
+								<span class="portfolio-info__title">
+									Тип объекта
+								</span>
+								<span class="portfolio-info__text">
+									Магазин
+								</span>
+							</div>
+						</div>
+						<div class="portfolio-info__block">
+							<img src="img/icon_m2.png" alt="">
+							<div class="portfolio-info__text_wrapper">
+								<span class="portfolio-info__title">
+									Площадь
+								</span>
+								<span class="portfolio-info__text">
+									150м2
+								</span>
+							</div>
+						</div>
+						<div class="portfolio-info__block">
+							<img src="img/icon_geo.png" alt="">
+							<div class="portfolio-info__text_wrapper">
+								<span class="portfolio-info__title">
+									Адрес
+								</span>
+								<span class="portfolio-info__text">
+									г. Новосибирск, <br>
+									ТЦ Аура
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="brief-video">
+						<div class="portfolio-brief">
+							<span class="portfolio-brief__title">
+								Коротко о проекте
+							</span>
+							<p class="portfolio-brief__text">
+								Полный комплекс отделочных, 
+								электромонтажных и сантехнических
+								работ. 3 этажа
+							</p>
+							<div class="portfolio-brief-wrap">
+								<a href="#" class="portfolio-brief__more">
+									<span>Узнать подробнее</span>
+									<img src="img/strelka_vniz.png" alt="">
+								</a>
+							</div>
+						</div>
+						<a href="" class="portfolio-block-play">
+							<img src="img/play-portfolio.png" alt="">
+						</a>
 					</div>
 					<div class="portfolio-bottom">
 						<a href="#" class="project-form__btn btn-anime-bottom">
@@ -1656,47 +1686,30 @@
 					<span class="calculation-block__name">
 						Выберите объект
 					</span>
-					<select name="" id="" class="calculation-block__select">
-						<option value="Магазин или бутик">
-							Магазин или бутик
-						</option>
-						<option value="Фитнес студий">
-							Фитнес студий
-						</option>
-						<option value="Ресторан или кафе">
-							Ресторан или кафе
-						</option>
-					</select>
+					<select name="Выберите объект" class="calculation-block__select"><option value="Магазин или бутик">Магазин или бутик</option><option value="Офис">Офис</option><option value="Салон красоты">Салон красоты</option><option value="Кафе, бар, ресторан">Кафе, бар, ресторан</option><option value="Торговый центр">Торговый центр</option><option value="Склад">Склад</option><option value="Банк">Банк</option><option value="Производство">Производство</option><option value="Образовательное учреждение">Образовательное учреждение</option><option value="Квартира">Квартира</option><option value="У меня другой тип объекта">У меня другой тип объекта</option></select>
 				</div>
 				<div class="calculation-block-label">
 					<span class="calculation-block__name">
 						Укажите площадь помещений (в кв.м)
 					</span>
-					<select name="" id="" class="calculation-block__select">
-						<option value="30 м2">
-							30 м2
-						</option>
-						<option value="40 м2">
-							40 м2
-						</option>
-						<option value="50 m2">
-							50 m2
-						</option>
-					</select>
+					<input type="text" placeholder="" class=" calculation-block__input">
 				</div>
 				<div class="calculation-block-label">
 					<span class="calculation-block__name">
 						Куда прислать смету
 					</span>
 					<select name="" id="" class="calculation-block__select">
-						<option value="Магазин или бутик">
-							Whats App
+						<option value="WhatsApp">
+							WhatsApp
 						</option>
-						<option value="Фитнес студий">
+						<option value="Telegram">
 							Telegram
 						</option>
-						<option value="Ресторан или кафе">
-							SMS
+						<option value="СМС">
+							СМС
+						</option>
+						<option value="Перезвоните мне">
+							Перезвоните мне
 						</option>
 					</select>
 				</div>
@@ -1994,7 +2007,7 @@
 		<div class="price-list__time" data-aos="fade-up" data-aos-duration="1000">
 			Держим прежние цены <br class="mob-true"> до
 			<img src="img/time.png" alt="">
-			23:59 30 сентября
+			23:59 <span class="day date-sp"></span> <span class="month date-sp"> сентября</span>
 		</div>
 		<div class="price-content">
 			<h3 class="price__title" data-aos="fade-up" data-aos-duration="1000">
@@ -2073,7 +2086,8 @@
 	</div>
 </section>
 <section class="premises">
-	<img src="img/premises-bg.png" alt="" class="header-bg">
+	<img src="img/premises-bg.png" alt="" class="header-bg tablet-none">
+	<img src="img/bg_left-pr-tab.png" alt="" class="header-bg tablet-true">
 	<div class="container">
 		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
 			Работаем <span>с помещениями разного типа </span> <br>
@@ -2291,7 +2305,8 @@
 			</div>
 			<div class="fight-right" data-aos="fade-left" data-aos-duration="1000">
 				<div class="fight-right__block fight-right__block_1">
-					<img src="img/dopusk.png" alt="" class="fight-right__img">
+					<img src="img/dopusk.png" alt="" class="fight-right__img tablet-none">
+					<img src="img/dopusk_tb.png" alt="" class="fight-right__img tablet-true">
 					<p class="fight-right__text">
 						Имеем  <br>
 						допуски для  <br>
@@ -2304,7 +2319,8 @@
 					</a>
 				</div>
 				<div class="fight-right__block fight-right__block_2">
-					<img src="img/telbl10.png" alt="" class="fight-right__img">
+					<img src="img/telbl10.png" alt="" class="fight-right__img tablet-none">
+					<img src="img/telbl10_tb.png" alt="" class="fight-right__img tablet-true">
 					<p class="fight-right__text">
 						Перезвоним  <br>
 						по телефону <br>
@@ -2438,7 +2454,8 @@
 	</div>
 </section>
 <section class="specialist">
-	<img src="img/specialist-bg.png" alt="" class="header-bg">
+	<img src="img/specialist-bg.png" alt="" class="header-bg tablet-none">
+	<img src="img/specialist-bg-tablet.png" alt="" class="header-bg tablet-true">
 	<div class="container">
 		<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
 			Вызовите на объект нашего ведущего специалиста <br>
@@ -2447,7 +2464,8 @@
 		<div class="specialist-row">
 			<img src="img/min_free.png" alt="" class="specialist-row__free">
 			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1000">
-				<img src="img/specialist-1.png" alt="" class="specialist-block__img">
+				<img src="img/specialist-1.png" alt="" class="specialist-block__img tablet-none">
+				<img src="img/tab_p (6).png" alt="" class="specialist-block__img tablet-true">
 				<span class="specialist-block__num mob-true">
 					01
 				</span>
@@ -2457,7 +2475,8 @@
 				</p>
 			</div>
 			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1400">
-				<img src="img/specialist-2.png" alt="" class="specialist-block__img">
+				<img src="img/specialist-2.png" alt="" class="specialist-block__img tablet-none">
+				<img src="img/tab_p (5).png" alt="" class="specialist-block__img tablet-true">
 				<span class="specialist-block__num mob-true">
 					02
 				</span>
@@ -2467,7 +2486,8 @@
 				</p>
 			</div>
 			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1800">
-				<img src="img/specialist-3.png" alt="" class="specialist-block__img">
+				<img src="img/specialist-3.png" alt="" class="specialist-block__img tablet-none">
+				<img src="img/tab_p (4).png" alt="" class="specialist-block__img tablet-true">
 				<span class="specialist-block__num mob-true">
 					03
 				</span>
@@ -2477,7 +2497,8 @@
 				</p>
 			</div>
 			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1000">
-				<img src="img/specialist-4.png" alt="" class="specialist-block__img">
+				<img src="img/specialist-4.png" alt="" class="specialist-block__img tablet-none">
+				<img src="img/tab_p (3).png" alt="" class="specialist-block__img tablet-true">
 				<span class="specialist-block__num mob-true">
 					04
 				</span>
@@ -2487,7 +2508,8 @@
 				</p>
 			</div>
 			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1400">
-				<img src="img/specialist-5.png" alt="" class="specialist-block__img">
+				<img src="img/specialist-5.png" alt="" class="specialist-block__img tablet-none">
+				<img src="img/tab_p (2).png" alt="" class="specialist-block__img tablet-true">
 				<span class="specialist-block__num mob-true">
 					05
 				</span>
@@ -2497,7 +2519,8 @@
 				</p>
 			</div>
 			<div class="specialist-block" data-aos="fade-up" data-aos-duration="1800">
-				<img src="img/specialist-6.png" alt="" class="specialist-block__img">
+				<img src="img/specialist-6.png" alt="" class="specialist-block__img tablet-none">
+				<img src="img/tab_p (1).png" alt="" class="specialist-block__img tablet-true">
 				<span class="specialist-block__num mob-true">
 					06
 				</span>
@@ -2660,7 +2683,7 @@
 	<div class="container">
 		<div class="contacts-inner">
 			<div class="contacts-map pc-true">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34eea78c9c0a4aec29a79f1bd973b97c1fb1a8501e86e6c83dd2b1e56e6a4c5e&amp;width=1170&amp;height=536&amp;lang=ru_RU&amp;scroll=false"></script>
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34eea78c9c0a4aec29a79f1bd973b97c1fb1a8501e86e6c83dd2b1e56e6a4c5e&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 			</div>
 			<div class="contacts-map__mobile mob-true">
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c0d2328a44b5d5d8538e3861488cb20916bdb57f1e4c7dcd797f2432a3f7fa3&amp;width=750&amp;height=245&amp;lang=ru_RU&amp;scroll=false"></script>

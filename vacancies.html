@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru" class="index-html">
+<head>
+	<meta charset="UTF-8">
+	<title>Repair</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- title icon-->
+	<link rel="shortcut icon" type="image/x-icon" href="Favicon.ico">
+	<!-- libs css-->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+	<!-- main css -->
+	<link rel="stylesheet" href="libs/selectize.js-master/dist/css/selectize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="vacancies-page">
+<div class="dark-window"></div>
+<div class="modal-menu mob-true">
+	<div class="modal-menu__inner">
+		<h2 class="modal-menu__title">
+			<span>МЕНЮ</span>
+			<img class="menu-close" src="img/close-menu.png" alt="">
+		</h2>
+		<ul class="nav-list">
+			<li class="nav-list__item active">
+				<a href="">ГЛАВНАЯ</a>
+			</li>
+			<li class="nav-list__item has-child">
+				<a href="">УСЛУГИ</a>
+				<ul class="has-child__list">
+					<li class="has-child__list__item has-child__list__item_active">
+						<a href="">
+							Ремонт и отделка <br>
+							помещений
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Фасадные и  <br>
+							кровельные работы
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Генеральный подряд
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Дизайн-проект <br>
+							помещений
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Подготовка домов  <br>
+							к сдаче
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Реконструкция зданий
+						</a>
+					</li>
+					<li class="has-child__list__item">
+						<a href="">
+							Малоэтажное <br>
+							строительство
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-list__item">
+				<a href="">ПОРТФОЛИО</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="">СКАЧАТЬ ПРАЙС</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="">ВАКАНСИИ</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="">КОНТАКТЫ</a>
+			</li>
+		</ul>
+		<div class="modal-menu-text">
+			<span class="modal-menu-text__time">
+				Звоните, мы сейчас работаем
+			</span>
+			<a href="tel:" class="modal-menu-text__phone">
+				8 (383) 291-52-53
+			</a>
+			<span class="modal-menu-text__subtext">
+				Задайте вопрос напрямую
+			</span>
+			<div class="header-messenger__list">
+				<a href="" class="header-messenger__item">
+					<div class="header-messenger-wrapper">
+						<img class="hover-no" src="img/whatc.png" alt="">
+						<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+					</div>
+					<span>WhatsApp</span>
+				</a>
+				<a href="" class="header-messenger__item header-messenger__item_tg">
+					<img src="img/icon_telegram.png" alt="">
+					<span>Telegram</span>
+				</a>
+			</div>
+			<span class="modal-menu-text__time">
+				Напишите нам
+			</span>
+			<a href="mail-to:sibstyle@ya.ru" class="header-phone__email email-anime2">
+				sibstyle@yandex.ru
+			</a>
+			<div class="footer-soc">
+				<span class="footer-soc__title">
+					Мы в социальных 
+					сетях
+				</span>
+				<div class="footer-soc__row">
+					<a href="" class="footer-soc__item footer-soc_f">
+						<img src="img/iconinsta_f.png" alt="">
+					</a>
+					<a href="" class="footer-soc__item">
+						<img src="img/iconwk_f.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-window modal-window-3 modal-window-estimate">
+	<div class="modal-window__inner" id="modal-window-1">
+		<img src="img/close-menu.png" alt="" class="modal-window__close">
+		<div class="modal-window-block">
+			<img src="img/min_smeta.png" alt="" class="modal-window__img">
+			<h2 class="modal-window-block__title">
+				Предварительный <br>
+				расчет сметы
+			</h2>
+			<p class="modal-window-block__subtitle">
+				Заполните данные формы  за 1 мин. <br> 
+				и получите предварительный  <br>
+				расчет стоимости работ для  <br>
+				вашего объекта
+			</p>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Тип вашего объекта
+				</span>
+				<select name="Тип вашего объекта" id="" class="calculation-block__select">
+					<option value="Коммерческий (офис, кафе, магазин, 
+						салон красоты и т.д.)">
+						Коммерческий (офис, кафе, магазин, 
+						салон красоты и т.д.)
+					</option>
+					<option value="Частный (дом, квартира, коттедж)">
+						Частный (дом, квартира, коттедж)
+					</option>
+					<option value="Производственный (цех, производство)">
+						Производственный (цех, производство)
+					</option>
+					<option value="Другой">
+						Другой
+					</option>
+				</select>
+			</div>
+			<div class="calculation-block-label calculation-block-label_rev">
+				<span class="calculation-block__name">
+					Введите общий размер <br class="mob-true">помещений в м2
+				</span>
+				<span class="calculation-block__subname">
+					Если еще не делали замер - пишите “не знаю”
+				</span>
+				<input type="text" placeholder="Например, 120м2 или не знаю" class="calculation-block__input">
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Есть ли проект или техническое <br>
+					задание в наличии
+				</span>
+				<select name="Есть ли проект или техническое задание в наличии" id="" class="calculation-block__select">
+					<option value="Нет">
+						Нет
+					</option>
+					<option value="Да">
+						Да
+					</option>
+					<option value="Не знаю">
+						Не знаю
+					</option>
+				</select>
+			</div>
+			<div class="calculation-block-label calculation-block-label-oplt">
+				<span class="calculation-block__name">
+					Какой вид оплаты вам подходит?
+				</span>
+				<div class="estimate-block__wrapper">
+					<div class="estimate-block__block">
+						<input checked type="checkbox" name="nal-1" id="label-1" class="modal-window-estimate__check">
+						<label for="label-1" class="modal-window-estimate__label">
+							Безналичный <br> <br class="mob-true">
+							расчет
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-2" class="modal-window-estimate__check">
+						<label for="label-2" class="modal-window-estimate__label">
+							Наличный <br><br class="mob-true">
+							расчет
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Какие требуются работы?
+				</span>
+				<div class="estimate-block__block__wrapper">
+					<div class="estimate-block__block estimate-block__block_ab">
+						<input checked type="checkbox" name="nal-2" id="label-3" class="modal-window-estimate__check">
+						<label for="label-3" class="modal-window-estimate__label">
+							Косметический ремонт (поклейка обоев, <br>
+							обновление полов и пр)
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_ab">
+						<input type="checkbox" name="nal-2" id="label-4" class="modal-window-estimate__check">
+						<label for="label-4" class="modal-window-estimate__label">
+							Капитальный ремонт (перепланировка, <br>
+							замена коммуникаций и пр)
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-2" id="label-5" class="modal-window-estimate__check">
+						<label for="label-5" class="modal-window-estimate__label">
+							Реконструкция
+						</label>
+					</div>
+				</div>
+				
+				<div class="estimate-block__wrapper">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-6" class="modal-window-estimate__check">
+						<label for="label-6" class="modal-window-estimate__label">
+							Нужна консультация
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_x2">
+						<input type="checkbox" name="nal-1" id="label-7" class="modal-window-estimate__check">
+						<label for="label-7" class="modal-window-estimate__label">
+							Другое
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Трeбуются ли дополнительные <br class="mob-true"> услуги?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="dop-1" id="dop-1" class="modal-window-estimate__check">
+						<label for="dop-1" class="modal-window-estimate__label">
+							Электрика
+						</label>
+					</div>
+					<div class="estimate-block__block block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-210" class="modal-window-estimate__check">
+						<label for="label-210" class="modal-window-estimate__label">
+							Сантехника
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-220" class="modal-window-estimate__check">
+						<label for="label-220" class="modal-window-estimate__label">
+							Вентиляция/ <br> <br class="mob-true">
+							кондиционирование
+						</label>
+					</div>
+					<div class="estimate-block__block block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-230" class="modal-window-estimate__check">
+						<label for="label-230" class="modal-window-estimate__label">
+							Отопление
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input  type="checkbox" name="nal-1" id="label-240" class="modal-window-estimate__check">
+						<label for="label-240" class="modal-window-estimate__label">
+							Водоснабжение
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_end">
+						<input type="checkbox" name="nal-1" id="label-250" class="modal-window-estimate__check">
+						<label for="label-250" class="modal-window-estimate__label">
+							Противопожарная <br> <br class="mob-true">
+							система
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_end2">
+						<input type="checkbox" name="nal-1" id="label-260" class="modal-window-estimate__check">
+						<label for="label-260" class="modal-window-estimate__label">
+							Видеонаблюдение
+						</label>
+					</div>
+					<div class="estimate-block__block estimate-block__block_end3 block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-270" class="modal-window-estimate__check">
+						<label for="label-270" class="modal-window-estimate__label">
+							Другое
+						</label>
+					</div>
+					<div class="estimate-block__block block_psd_l">
+						<input type="checkbox" name="nal-1" id="label-280" class="modal-window-estimate__check">
+						<label for="label-280" class="modal-window-estimate__label">
+							Не требуется
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label calculation-block-label-radio">
+				<span class="calculation-block__name">
+					Когда планируете <br class="mob-true">начать работы?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x4" class="modal-window-estimate__check">
+						<label for="x4" class="modal-window-estimate__label">
+							В течение 24 часов
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x41" class="modal-window-estimate__check">
+						<label for="x41" class="modal-window-estimate__label">
+							В течение 1-2 недель
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x3" class="modal-window-estimate__check">
+						<label for="x3" class="modal-window-estimate__label">
+							В течение месяца
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x2" class="modal-window-estimate__check">
+						<label for="x2" class="modal-window-estimate__label">
+							В ближайшие <br>
+							3 месяца
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="radio" name="when-1" id="x14" class="modal-window-estimate__check">
+						<label for="x14" class="modal-window-estimate__label">
+							Более, чем через <br>
+							3 месяца
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Какой вариант расчета <br class="mob-true">нужно сделать?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="dop-1" id="dop-19" class="modal-window-estimate__check">
+						<label for="dop-19" class="modal-window-estimate__label">
+							“Под кюч” <br>
+							с материалами
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="label-2109" class="modal-window-estimate__check">
+						<label for="label-2109" class="modal-window-estimate__label">
+							Только работы. <br>
+							Материалы ваши
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Куда вам отправить <br class="mob-true">расчет стоимости?
+				</span>
+				<div class="estimate-block__wrapper estimate-block__wrapper-3">
+					<div class="estimate-block__block">
+						<input type="checkbox" name="dop-1" id="dop-19x" class="modal-window-estimate__check">
+						<label for="dop-19x" class="modal-window-estimate__label">
+							WhatsApp
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="dop-20x" class="modal-window-estimate__check">
+						<label for="dop-20x" class="modal-window-estimate__label">
+							Telegram
+						</label>
+					</div>
+					<div class="estimate-block__block">
+						<input type="checkbox" name="nal-1" id="dop-21x" class="modal-window-estimate__check">
+						<label for="dop-21x" class="modal-window-estimate__label">
+							Бесплатая консультация по телефону. <br class="mob-true"></br> Хочу <br>
+							получить более подробную<br class="mob-true"> информацию.
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculation-block-label calculation-block-label_mb">
+				<span class="calculation-block__name">
+					Введите ваш телефон
+				</span>
+				<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+			</div>
+
+			<a href="#" class="header-right__btn">
+				<span>РАССЧИТАТЬ СМЕТУ<img src="img/arrow-r.png" alt=""></span>
+			</a>
+			<p class="modal-window-block__text">
+				Нажимая на кнопку, вы даете согласие на обработку <br>
+				персональных данных и соглашаетесь с <a href="">политикой <br>
+				конфиденциальности.</a> Ваши данные не будут <br>
+				переданы третим лицам.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="modal-window modal-window-1">
+	<div class="modal-window__inner" id="modal-window-1">
+		<img src="img/close-menu.png" alt="" class="modal-window__close">
+		<div class="modal-window-block">
+			<img src="img/modal-window-img.png" alt="" class="modal-window__img">
+			<h2 class="modal-window-block__title">
+				Получите <br>
+				бесплатную консультвацию <br>
+				от инженера-эксперта
+			</h2>
+			<p class="modal-window-block__subtitle">
+				Заполните форму обратной <br>
+				связи. С вами свяжется в <br class="pc-true">
+				течение часа наш ведущий <br class="pc-true">
+				специалист и проконсультирует <br class="pc-true">
+				по всем вопросам
+			</p>
+			<div class="calculation-block-label">
+				<span class="calculation-block__name">
+					Введите ваш телефон
+				</span>
+				<input type="text" placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+			</div>
+			<a href="#" class="header-right__btn">
+				<span>ЗАКАЗАТЬ ЗВОНОК<img src="img/arrow-r.png" alt=""></span>
+			</a>
+			<p class="modal-window-block__text">
+				Нажимая на кнопку, вы даете согласие на обработку <br>
+				персональных данных и соглашаетесь с <a href="">политикой <br>
+				конфиденциальности.</a> Ваши данные не будут <br>
+				переданы третим лицам.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="modal-navigation">
+	<div class="modal-navigation__block modal-navigation__block_1">
+		<div class="modal-navigation__block_left">
+			Рассчитать <br>
+			стоимость
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/raschet.png" alt="">
+		</div>
+	</div>
+	<div class="modal-navigation__block modal-navigation__block_2">
+		<div class="modal-navigation__block_left">
+			Перезвоните <br>
+			мне
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/trubka.png" alt="">
+		</div>
+	</div>
+	<div class="modal-navigation__block modal-navigation__block_3">
+		<div class="modal-navigation__block_left">
+			Скачать <br>
+			прайс-лист
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/price.png" alt="">
+		</div>
+	</div>
+	<div class="modal-navigation__block modal-navigation__block_4">
+		<div class="modal-navigation__block_left">
+			Вызвать  <br>
+			инженера
+		</div>
+		<div class="modal-navigation__block__right">
+			<img src="img/spets.png" alt="">
+		</div>
+	</div>
+</div>
+<header class="header">
+	<nav class="header-nav">
+		<div class="container">
+			<div class="nav-top">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="">
+					<div class="header-logo-text">
+						<span class="header-logo__title">
+							Сибирский стиль
+						</span>
+						<p class="header-logo__subtext">
+							Проектирование, дизайн и отделка <br>
+							помещений в Новосибирске и <br>
+							области с 2000 года
+						</p>
+					</div>
+					<a href="" class="header-button mob-true">
+						<span class="header-button__title">
+							МЕНЮ
+						</span>
+						<img src="img/menu-mb.png" alt="">
+					</a>
+				</div>
+				<div class="header-2gis">
+					<img src="img/2gis.png" alt="">
+				</div>
+				<div class="header-messenger">
+					<p class="header-messenger__text">
+						Задайте <br>
+						вопрос <br>
+						напрямую:
+					</p>
+					<div class="header-messenger__list">
+						<a href="" class="header-messenger__item">
+							<div class="header-messenger-wrapper">
+								<img class="hover-no" src="img/whatc.png" alt="">
+								<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+							</div>
+							<span>WhatsApp</span>
+						</a>
+						<a href="" class="header-messenger__item header-messenger__item_tg">
+							<img src="img/icon_telegram.png" alt="">
+							<span>Telegram</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-phone">
+					<a href="tel:" class="header-phone__number phone-anime-gold">
+						8 (383) 291-52-53
+					</a>
+					<a href="mail-to:sibstyle@ya.ru" class="header-phone__email email-anime2">
+						sibstyle@ya.ru
+					</a>
+					<a href="#" class="header-phone__calback phone-anime-gold">
+						ПЕРЕЗВОНИТЬ ВАМ
+					</a>
+				</div>
+			</div>
+			<ul class="nav-list">
+				<li class="nav-list__item active">
+					<a href="">ГЛАВНАЯ</a>
+				</li>
+				<li class="nav-list__item has-child">
+					<a href="">УСЛУГИ</a>
+					<ul class="has-child__list">
+						<li class="has-child__list__item has-child__list__item_active">
+							<a href="">
+								Ремонт и отделка <br>
+								помещений
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Фасадные и  <br>
+								кровельные работы
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Генеральный подряд
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Дизайн-проект <br>
+								помещений
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Подготовка домов  <br>
+								к сдаче
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Реконструкция зданий
+							</a>
+						</li>
+						<li class="has-child__list__item">
+							<a href="">
+								Малоэтажное <br>
+								строительство
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-list__item">
+					<a href="">ПОРТФОЛИО</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="">СКАЧАТЬ ПРАЙС</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="">ВАКАНСИИ</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="">КОНТАКТЫ</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<section class="vacancies">
+	<div class="container">
+		<h1 class="vacancies__title">
+			Вакансии
+		</h1>
+		<h2 class="vacancies__subtitle">
+			В нашу компанию требуются:
+		</h2>
+		<div class="vacancies-row">
+			<div class="vacancies-left">
+				<img src="img/vacan-img.png" alt="" class="vacancies-left__img">
+			</div>
+			<div class="vacancies-right">
+				<ul class="vacancies-list">
+					<li class="vacancies-list__item">
+						Отделочники универсалы;
+					</li>
+					<li class="vacancies-list__item">
+						Бригады отделочников;
+					</li>
+					<li class="vacancies-list__item">
+						Сантехники;
+					</li>
+					<li class="vacancies-list__item">
+						Сварщики;
+					</li>
+					<li class="vacancies-list__item">
+						Электрики, желательно с допусками;
+					</li>
+					<li class="vacancies-list__item">
+						Иностранные рабочие, имеющие патент.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="vacancies-bottom">
+			<h3 class="vacancies-bottom__title">
+				Также предлагаем <span>сотрудничество проектировщикам,</span> не фриланс.
+			</h3>
+			<p class="vacancies-bottom__text">
+				В 90% случаев мы находимся на объектах, поэтому по телефону говорить неудобно. <br>
+				Чтобы предложить свою кандидатуру, пожалуйста, <a href="mailto:sibstyle@yandex.ru">пишите на почту</a>.
+			</p>
+		</div>
+	</div>
+</section>
+<section class="contacts">
+	<div class="container">
+		<div class="contacts-inner">
+			<div class="contacts-map pc-true">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34eea78c9c0a4aec29a79f1bd973b97c1fb1a8501e86e6c83dd2b1e56e6a4c5e&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="contacts-map__mobile mob-true">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c0d2328a44b5d5d8538e3861488cb20916bdb57f1e4c7dcd797f2432a3f7fa3&amp;width=750&amp;height=245&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="contacts-block" data-aos="fade-right" data-aos-duration="1000">
+				<div class="contacts-block__inner">
+					<h2 class="contacts__title">
+						Наши контакты
+					</h2>
+					<a href="tel:8 (383) 291-52-53" class="contacts__phone phone-anime">
+						<img src="img/contact__phone.png" alt="">
+						8 (383) 291-52-53
+					</a>
+					<a href="mail-to:sibstyle@yandex.ru" class="email-anime contacts__email">
+						<img src="img/contact__email.png" alt="">
+						<span>sibstyle@yandex.ru</span>
+					</a>
+					<div class="contacts-mobile-wrapper">
+						<div class="contacts__adress">
+							<img src="img/contact__geo.png" alt="">
+							<span>г. Новосибирск, Горский мкр-н, <br>
+							64, 3 этаж, офис 27</span>
+						</div>
+						<div class="contacts__time">
+							<img src="img/contact__time.png" alt="">
+							<div class="contacts__time_text">
+								<span class="contacts__time__title">
+									Время работы: 
+								</span> 
+								<br>
+								<span class="contacts__time__date">
+									Пн-Пт 9:00-18:00
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#" class="contacts-block__link phone-anime">
+						ПЕРЕЗВОНИТЕ МНЕ
+					</a>
+					<div class="contacts-block__mobile-wrapper">
+						<div class="contacts-block__mobile-wrapper_l">
+							<p class="contacts-block__text">
+								Или задайте <br>
+								вопрос напрямую
+							</p>
+							<div class="task-plashka__subtitle">
+								<img src="img/svet.png" alt="" class="num-anime task-plashka__cirlce">
+								<span>Среднее время ответа 1 минута</span>
+							</div>
+						</div>
+						<div class="header-messenger__list">
+							<a href="" class="header-messenger__item">
+								<div class="header-messenger-wrapper">
+										<img class="hover-no" src="img/whatc.png" alt="">
+										<img class="hover-true" src="img/iconWhatsApp__hover.png" alt="">
+									</div>
+									<span>WhatsApp</span>
+							</a>
+							<a href="" class="header-messenger__item header-messenger__item_tg">
+								<img src="img/icon_telegram.png" alt="">
+								<span>Telegram</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-top" data-aos="fade-up" data-aos-duration="1000">
+			<div class="footer-top-left">
+				<img src="img/logo_footer.png" alt="">
+				<div class="footer-top-left__logo_wrap">
+					<p class="footer-top__title">
+						Группа компаний <br>
+						<span>«Сибирский стиль»</span>
+					</p>
+					<p class="footer-top__subtitle">
+						Проектироание, строительство,  <br>
+						дизайн и отделка недвижимости  <br>
+						в Новосибирске и области <br>
+						с 2000 года
+					</p>
+				</div>
+				
+			</div>
+			<div class="footer-top-list">
+				<span class="footer-top-list__title">
+					Навигация по сайту
+				</span>
+				<ul class="footer-top-lists">
+					<li class="footer-top-list__item">
+						<a href="#">Ремонт и отделка</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Фасадные и кровельные работы</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Генеральный подряд</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Дизайн-проект помещений</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Подготовка домов к сдаче</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Реконструкция зданий</a>
+					</li>
+					<li class="footer-top-list__item">
+						<a href="#">Малоэтажное строительство</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-top-center">
+				<a href="#" class="footer-2gis">
+					<img src="img/2gis_footer.png" alt="" class="pc-true">
+					<img src="img/2gis_mobile_footer.png" alt="" class="mob-true">
+					<p class="footer-2gis__subtitle">
+						Рейтинг 4.8. <br>
+						(На основе 25 отзывов)
+					</p>
+				</a>
+				<div class="footer-soc">
+					<span class="footer-soc__title">
+						Мы в соцсетях
+					</span>
+					<div class="footer-soc__row">
+						<a href="" class="footer-soc__item footer-soc_f">
+							<img src="img/iconinsta_f.png" alt="">
+						</a>
+						<a href="" class="footer-soc__item">
+							<img src="img/iconwk_f.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-right">
+				<h2 class="footer-right__title footer-top-list__title">
+					Клиентам
+				</h2>
+				<ul class="footer-right__list">
+					<li class="footer-right__item">
+						<a href="#">
+							Реквизиты для юридических лиц
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#">
+							Посмотреть пример договора
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#">
+							Скачать прайс-лист
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#">
+							Получить смету
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-bottom-left">
+				<span>© 2000 - 2021.  Все права защищены</span>
+				<br>
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+			<div class="footer-bottom-center">
+				Любая информация, предоставленная на данном <br>
+				сайте носит исключительно информационный характер <br>
+				и ни при каких условиях не является публичной офертой
+			</div>
+			<div class="footer-bottom-right">
+				Сделано в <br>
+				<a href="">bugaev.studio</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- libs js -->
+<script src="js/libs.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://jquery-ui.googlecode.com/svn-history/r3982/trunk/ui/i18n/jquery.ui.datepicker-nl.js"></script>
+
+<script src="js/common.js"></script>
+</body>
+
+</html>
