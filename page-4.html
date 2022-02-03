@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="libs/selectize.js-master/dist/css/selectize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body class="contacts-page">
+<body class="single-page">
 <div class="fixed-navigation mob-true">
 	<a href="https://api.whatsapp.com/send?phone=79139155253&text=Добрый%20день!" target="_blank" class="fixed-navigation__block fixed-navigation__block_1">
 		<span>
@@ -557,7 +557,7 @@
 	<nav class="header-nav">
 		<div class="container">
 			<div class="nav-top">
-				<a href="index.html" class="header-logo">
+				<div class="header-logo">
 					<img src="img/logo.png" alt="">
 					<div class="header-logo-text">
 						<span class="header-logo__title">
@@ -575,7 +575,7 @@
 						</span>
 						<img src="img/menu-mb.png" alt="">
 					</a>
-				</a>
+				</div>
 				<div class="header-2gis">
 					<a target="_blank" href="https://2gis.ru/novosibirsk/firm/"><img src="img/2gis.png" alt=""></a>
 				</div>
@@ -676,48 +676,153 @@
 		</div>
 	</nav>
 </header>
-<section class="contacts-section">
+<section class="page page-4">
+	<img src="img/page-4-pc.png" alt="" class="header-bg pc-true tablet-none">
+	<img src="img/page-4-tablet.png" alt="" class="header-bg tablet-true">
+	<img src="img/page-4-mobile.png" alt="" class="header-bg mob-true">
 	<div class="container">
-		<div class="contacts-page-row">
-			<div class="contacts-page-row__left" data-aos="fade-right" data-aos-duration="1000">
-				<h1 class="contacts-page__title">
-					Контакты
-				</h1>
-
-				<h2 class="contacts__title">
-					Свяжитесь с нами
-				</h2>
-				<a href="tel:8 (383) 291-52-53" class="contacts__phone phone-anime">
-					<img src="img/contact__phone.png" alt="">
-					8 (383) 291-52-53
-				</a>
-				<a href="mailto:sibstyle@yandex.ru" class="email-anime contacts__email">
-					<img src="img/contact__email.png" alt="">
-					<span>sibstyle@yandex.ru</span>
-				</a>
-				<div class="contacts-mobile-wrapper">
-					<div class="contacts__time">
-						<img src="img/contact__time.png" alt="">
-						<div class="contacts__time_text">
-							<span class="contacts__time__title">
-								Время работы: 
-							</span> 
-							<br>
-							<span class="contacts__time__date">
-								Пн-Пт 9:00-18:00
-							</span>
+		<h1 class="page__title" data-aos="fade-right" data-aos-duration="1000">
+			<span>Реконструкция зданий</span> в Новосибирске <br>
+			и области <span>с гарантией в договоре до 5 лет</span>
+		</h1>
+		<p class="page__text" data-aos="fade-right" data-aos-duration="1600">
+			Все виды работы: демонтаж,<br class="mob-true"> усиление конструкций, инженерные<br class="mob-true"> <br>
+			системы, сантехника, отопление,<br class="mob-true"> водоснабжение и канализация,<br class="mob-true"> <br>
+			электроснабжение, теплоизоляция
+		</p>
+		<div class="page-row">
+			<div class="page-left">
+				<div class="page-block" data-aos="fade-right" data-aos-duration="1000">
+					<img src="img/page-1.png" alt="" class="page-block__img tablet-none pc-true">
+					<img src="img/page-1-tab.png" alt="" class="page-block__img tablet-true">
+					<img src="img/page-1-mob.png" alt="" class="page-block__img mob-true">
+					<p class="page-block__text">
+						<span>Полное комплектование</span> <br>
+						инженерным оборудованием  <br>
+						и строительными, отделочными <br>
+						материалами <span>с экономией <br>
+						до 30%</span>
+					</p>
+				</div>
+				<div class="page-block page-block-center" data-aos="fade-right" data-aos-duration="1200">
+					<img src="img/page-2.png" alt="" class="page-block__img tablet-none pc-true">
+					<img src="img/page-2-tab.png" alt="" class="page-block__img tablet-true">
+					<img src="img/page-2-mob.png" alt="" class="page-block__img mob-true">
+					<p class="page-block__text">
+						<span>Поэтапная оплата по  <br>
+						договору</span> с фиксированной  <br>
+						ценой наличным или  <br>
+						безналичным расчетом
+					</p>
+				</div>
+				<div class="page-block page-block-center" data-aos="fade-right" data-aos-duration="1400">
+					<img src="img/page-3.png" alt="" class="page-block__img tablet-none pc-true">
+					<img src="img/page-3-tab.png" alt="" class="page-block__img tablet-true">
+					<img src="img/page-3-mob.png" alt="" class="page-block__img mob-true">
+					<p class="page-block__text">
+						<span>Детальная  <br>
+						расшифрованная  <br>
+						смета</span> и старт работ  <br>
+						в течение 24 часов
+					</p>
+				</div>
+			</div>
+			<div class="page-right" data-aos="fade-left" data-aos-duration="1500">
+				<form action="" class="page-form" name="Дизайн-проект любых помещений">
+					<h2 class="page-form__title">
+						Консультация <br>
+						в удобное время
+					</h2>
+					<div class="calculation-block-label calculation-block-label_phone">
+						<span class="calculation-block__name">
+							Введите ваш телефон
+						</span>
+						<input name="name" type="text" required placeholder="+7 (999) 999-99-99" class="phone calculation-block__input">
+					</div>
+					<div class="calculation-block-label calculation-block__data_lab">
+						<img src="img/data.png" alt="" class="calculation-block__data">
+						<span class="calculation-block__name">
+							Укажите удобную дату
+						</span>
+						<span class="page-form__subtext">
+							(Любой день с 8 до 20 часов)
+						</span>
+						<input name="date" class="calculation-block__input date-input" placeholder="Выберите дату">
+					</div>
+					<div class="calculation-block-label calculation-block__data_lab">
+						<input name="time" class="calculation-block__input time-input" placeholder="Время">
+					</div>
+					<button class="header-right__btn btn-anime-bottom">
+						<span class="button__blik"></span>
+						<span>ПЕРЕЗВОНИТЕ МНЕ<img src="img/arrow-r.png" alt=""></span>
+					</button>
+					<p class="page-form-politic">
+						Ваши данные защищены. Отправляя <br>
+						заявку вы соглашаетесь с <a href="politic.html">политикой <br>
+						конфиденциальности.</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contacts">
+	<div class="container">
+		<div class="contacts-inner">
+			<div class="contacts-map pc-true">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34eea78c9c0a4aec29a79f1bd973b97c1fb1a8501e86e6c83dd2b1e56e6a4c5e&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="contacts-map__mobile mob-true">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c0d2328a44b5d5d8538e3861488cb20916bdb57f1e4c7dcd797f2432a3f7fa3&amp;width=750&amp;height=245&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="contacts-block" data-aos="fade-right" data-aos-duration="1000">
+				<div class="contacts-block__inner">
+					<h2 class="contacts__title">
+						Наши контакты
+					</h2>
+					<a href="tel:8 (383) 291-52-53" class="contacts__phone phone-anime">
+						<img src="img/contact__phone.png" alt="">
+						8 (383) 291-52-53
+					</a>
+					<a href="mailto::sibstyle@yandex.ru" class="email-anime contacts__email">
+						<img src="img/contact__email.png" alt="">
+						<span>sibstyle@yandex.ru</span>
+					</a>
+					<div class="contacts-mobile-wrapper">
+						<div class="contacts__adress">
+							<img src="img/contact__geo.png" alt="">
+							<span>г. Новосибирск, Горский мкр-н, <br>
+							64, 3 этаж, офис 27</span>
+						</div>
+						<div class="contacts__time">
+							<img src="img/contact__time.png" alt="">
+							<div class="contacts__time_text">
+								<span class="contacts__time__title">
+									Время работы: 
+								</span> 
+								<br>
+								<span class="contacts__time__date">
+									Пн-Пт 9:00-18:00
+								</span>
+							</div>
 						</div>
 					</div>
 					
-				</div>
-				<div class="contacts-block__mobile-wrapper">
-					<div class="contacts-block__mobile-wrapper_l">
-						<p class="contacts-block__text">
-							Задайте вопрос напрямую
-						</p>
-					</div>
-					<div class="header-messenger__list">
-						<div class="contacts-page-soc___wrapper">
+					<a href="#" class="modal-open-1 contacts-block__link phone-anime">
+						ПЕРЕЗВОНИТЕ МНЕ
+					</a>
+					<div class="contacts-block__mobile-wrapper">
+						<div class="contacts-block__mobile-wrapper_l">
+							<p class="contacts-block__text">
+								Или задайте <br>
+								вопрос напрямую
+							</p>
+							<div class="task-plashka__subtitle">
+								<img src="img/svet.png" alt="" class="num-anime task-plashka__cirlce">
+								<span>Среднее время <br class="mob-true">ответа 1 минута</span>
+							</div>
+						</div>
+						<div class="header-messenger__list">
 							<a href="https://api.whatsapp.com/send?phone=79139155253&text=Добрый%20день!" target="_blank" class="header-messenger__item">
 								<div class="header-messenger-wrapper">
 									<img class="hover-no" src="img/whatc.png" alt="">
@@ -725,77 +830,13 @@
 								</div>
 								<span>WhatsApp</span>
 							</a>
-							<div class="contacts-page-soc-bottom">
-								Среднее время <br>
-								ответа 40 секунд
-							</div>
-						</div>
-						<div class="contacts-page-soc___wrapper header-messenger__item_phone_wr">
-							<a href="" class="modal-open-1 header-messenger__item header-messenger__item_phone">
-								<img src="img/tel2.png" alt="">
-								<span>
-									Обратный <br>
-									звонок
-								</span>
+							<a href="https://t.me/sssss154" target="_blank" class="header-messenger__item header-messenger__item_tg">
+								<img src="img/icon_telegram.png" alt="">
+								<span>Telegram</span>
 							</a>
-							<div class="contacts-page-soc-bottom">
-								перезвоним <br>
-								в течение 30 минут
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="contacts-page-adress">
-					<h3 class="contacts-page-adress__title">
-						Наш офис
-					</h3>
-					<div class="contacts-page-adress__item">
-						<img src="img/geo_contacts.png" alt="" class="contacts-page-adress__img">
-						<div class="contacts-page-adress__text">
-							г. Новосибирск, <br>
-							Горский мкр-н, 64, <br>
-							3 этаж, офис 27
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="contacts-page-row__center" data-aos="fade-right" data-aos-duration="1500">
-				<div class="footer-soc">
-					<span class="footer-soc__title">
-						Мы в соцсетях
-					</span>
-					<div class="footer-soc__row">
-						<a href="https://www.instagram.com/otdelka_" target="_blank" class="footer-soc__item footer-soc_f">
-							<img src="img/iconinsta_f.png" alt="">
-						</a>
-						<a href="https://vk.com/sib_style_ru" target="_blank" class="footer-soc__item">
-							<img src="img/iconwk_f.png" alt="">
-						</a>
-					</div>
-				</div>
-				<form action="" name="Страница контактов форма" class="contacts-page__form">
-					<input  type="text" class="contacts-page__form__input" placeholder="Ваше имя">
-					<input required type="text" class="contacts-page__form__input phone" placeholder="Ваш телефон">
-					<label for="file-input" class="contacts-page__form__input contacts-page__form__file">
-						<span class="file-input__text">Прикрепить файл</span>
-					</label>
-					<input type="file" id="file-input">
-					<textarea name="" id="" placeholder="Ваше сообщение" class="contacts-page__form__input contacts-page__textarea"></textarea>
-					<button class="header-right__btn btn-anime">
-						<span>Перезвоните мне<img src="img/arrow-r.png" alt=""></span>
-						<span class="button__blik"></span>
-					</button>
-					<div class="project-form__lock">
-						<img src="img/lock.png" alt="">
-						<span>
-							Ваши данные защищены
-						</span>
-					</div>
-				</form>
-			</div>
-			<div class="contacts-page-row___right" data-aos="fade-left" data-aos-duration="2000">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A352666e4ae6f10a91f3017f6c7767d38eed4efe79dae5a6146edc85a67a5895b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 			</div>
 		</div>
 	</div>
@@ -916,6 +957,21 @@
 		</div>
 	</div>
 </footer>
+<div class="fixed-navigation mob-true">
+	<a href="https://api.whatsapp.com/send?phone=79139155253&text=Добрый%20день!" target="_blank" class="fixed-navigation__block fixed-navigation__block_1">
+		<span>
+			Связяться <br>
+			<strong>в WhatsApp</strong>
+		</span>
+		<img src="img/wg-m.png" alt="">
+	</a>
+	<a href="" class="fixed-navigation__block modal-open-1 fixed-navigation__block_2">
+		<span>
+			Позвонить
+		</span>
+		<img src="img/pt-mob.png" alt="">
+	</a>
+</div>
 <!-- libs js -->
 <script src="js/libs.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
